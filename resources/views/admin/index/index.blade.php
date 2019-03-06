@@ -4,7 +4,7 @@
 	<div id="content">
 	<!--breadcrumbs-->
 	  <div id="content-header">
-	    <div id="breadcrumb"> <a href="{{route('admin.index.index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
+	    <div id="breadcrumb"> <a href="{{route('admin.index.index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Trang chủ</a></div>
 	  </div>
 	<!--End-breadcrumbs-->
 
@@ -12,7 +12,7 @@
 	  <div class="container-fluid">
 	    <div class="quick-actions_homepage">
 	        <ul class="quick-actions">
-		        <li class="bg_lr"> <a href="{{route('admin.index.index')}}"> <i class="icon-dashboard"></i> Danh mục</a> </li>
+		        <li class="bg_lr"> <a href="{{route('admin.category.index')}}"> <i class="icon-dashboard"></i> Danh mục</a> </li>
 		        <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i>Câu chuyện</a> </li>
 		        <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i>Admin</a> </li>
 		        <li class="bg_lb"> <a href="form-common.html"> <i class="icon-th-list"></i>Liên hệ</a> </li>
