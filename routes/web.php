@@ -67,6 +67,22 @@ Route::namespace('Spa')->group(function(){
 		'uses' => 'ServiceController@learn',
 		'as' => 'spa.service.learn'
 	]);
+	Route::get('blog', [
+		'uses' => 'NewsController@index',
+		'as' => 'spa.news.index'
+	]);
+	Route::get('blog/{slug}', [
+		'uses' => 'NewsController@news',
+		'as' => 'spa.news.news'
+	]);
+	Route::get('{slug}-{id}.html', [
+		'uses' => 'NewsController@detail',
+		'as' => 'spa.news.detail'
+	]);
+	Route::get('tim-kiem', [
+		'uses' => 'NewsController@search',
+		'as' => 'spa.news.search'
+	]);
 });
 Route::namespace('Admin')->middleware('auth')->group(function(){
 // Index ADMIN	

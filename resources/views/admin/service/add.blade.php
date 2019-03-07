@@ -25,6 +25,12 @@
 	            <form class="form-horizontal" method="post" action="{{route('admin.news.add')}}" name="number_validate" id="number_validate" novalidate="novalidate" enctype="multipart/form-data">
 	            	{{csrf_field()}}
 	              <div class="control-group">
+	                <label class="control-label">Tên hiển thị:</label>
+	                <div class="controls">
+	                  <input type="text" name="name" id="required" value="{{ old('name') }}" style="width: 50%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
 	                <label class="control-label">Tiêu đề:</label>
 	                <div class="controls">
 	                  <input type="text" name="title" id="required" value="{{ old('name') }}" style="width: 50%" />

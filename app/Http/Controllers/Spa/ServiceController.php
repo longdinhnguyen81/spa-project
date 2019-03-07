@@ -13,7 +13,8 @@ class ServiceController extends Controller
     }
     public function service($slug){
     	$cat = str_replace("-"," ",$slug);
-    	$service = Service::where('title','like' ,'%'.$cat.'%')->with('catpackage')->first();
+    	$cats = str_replace("d","đ",$cat);
+    	$service = Service::where('name','like' ,'%'.$cats.'%')->with('catpackage')->first();
     	return view('spa.service.service', compact('service'));
     }
     public function learn(){

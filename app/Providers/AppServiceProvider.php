@@ -6,6 +6,7 @@ use Illuminate\Support\ServiceProvider;
 use App\CatPackage;
 use App\Category;
 use App\Service;
+use App\News;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,8 +24,10 @@ class AppServiceProvider extends ServiceProvider
 
         $newservices = Service::where('active', 1)->with('catpackage')->orderBy('id', 'desc')->limit(5)->get();
         $ranservices = Service::where('active', 1)->with('catpackage')->orderBy(\DB::raw('RAND()'))->limit(5)->get();
+        $newblogs = News::where('active', 1)->with('cat')->orderBy('id', 'desc')->limit(5)->get();
         view()->share('newservices', $newservices);
         view()->share('ranservices', $ranservices);
+        view()->share('newblogs', $newblogs);
     }
 
     /**

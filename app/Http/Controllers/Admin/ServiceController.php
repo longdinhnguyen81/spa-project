@@ -19,7 +19,8 @@ class ServiceController extends Controller
     }
     public function postAdd(Request $request){
     	$request->validate([
-    		'title' => 'required|unique:service',
+            'title' => 'required|unique:service',
+    		'name' => 'required|unique:service',
     		'description' => 'required',
     		'detail' => 'required',
     		'picture' => 'required',
@@ -27,6 +28,7 @@ class ServiceController extends Controller
     		'cat_id' => 'required',
     	]);
     	$service = new Service([
+            'name' => $request->name,
     		'title' => $request->title,
     		'description' => $request->description,
     		'detail' => $request->detail,
@@ -52,6 +54,7 @@ class ServiceController extends Controller
     }
     public function postEdit(Request $request,$id){
     	$request->validate([
+            'name' => 'required|unique:service,name,'.$id,
     		'title' => 'required|unique:service,title,'.$id,
     		'description' => 'required',
     		'detail' => 'required',
@@ -67,6 +70,7 @@ class ServiceController extends Controller
             $service->img = $img;
         }
     	$service = Service::find($id);
+        $service->name = $request->name;
     	$service->title = $request->title;
     	$service->description = $request->description;
     	$service->detail = $request->detail;

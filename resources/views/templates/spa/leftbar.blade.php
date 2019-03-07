@@ -1,4 +1,4 @@
-<div class="col-lg-3">
+						<div class="col-lg-3">
 							<aside class="sidebar">
 								<div class="tabs tabs-dark mb-4 pb-2">
 									<ul class="nav nav-tabs">

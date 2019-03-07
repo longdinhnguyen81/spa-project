@@ -25,6 +25,12 @@
 	            <form class="form-horizontal" method="post" action="{{route('admin.service.edit', $service->id)}}" name="number_validate" id="number_validate" novalidate="novalidate" enctype="multipart/form-data">
 	            	{{csrf_field()}}
 	              <div class="control-group">
+	                <label class="control-label">Tên hiển thị:</label>
+	                <div class="controls">
+	                  <input type="text" name="name" id="required" value="{{ $service->name }}" style="width: 50%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
 	                <label class="control-label">Tiêu đề:</label>
 	                <div class="controls">
 	                  <input type="text" name="title" id="required" value="{{ $service->title }}" style="width: 50%" />

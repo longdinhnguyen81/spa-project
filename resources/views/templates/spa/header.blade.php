@@ -150,7 +150,7 @@
 																@endif
 																	<ul class="dropdown-menu">
 															@foreach($catp->service as $service)
-																		<li><a class="dropdown-item" href="{{ route('spa.service.service', str_slug($service->title)) }}">{{ $service->title }}</a></li>
+																		<li><a class="dropdown-item" href="{{ route('spa.service.service', str_slug($service->name)) }}">{{ $service->name }}</a></li>
 															@endforeach
 																		
 																	</ul>
@@ -176,6 +176,16 @@
 															<a class="dropdown-item" href="{{ route('spa.index.contact') }}">
 																Liên hệ
 															</a>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item dropdown-toggle" href="{{ route('spa.news.index') }}">
+																Blog
+															</a>
+															<ul class="dropdown-menu">
+																@foreach($categorys as $cat)
+																<li><a class="dropdown-item" href="{{ route('spa.news.news', str_slug($cat->name)) }}">{{ $cat->name }}</a></li>
+																@endforeach
+															</ul>
 														</li>
 													</ul>
 												</nav>
