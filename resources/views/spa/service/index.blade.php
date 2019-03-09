@@ -67,16 +67,41 @@
 								<div class="sort-destination-loader min-height-screen mt-5 pt-2">
 									<div class="row portfolio-list sort-destination overflow-visible" data-sort-id="portfolio">
 									<!-- Điều Trị Da -->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da">
+									@php 
+										$c = "dieu-tri-da";
+										$color = "#70f";
+									 @endphp
+									@foreach($services as $service)
+									@php	
+										$id = $service->id;
+										$class = $service->catpackage->name;
+										if($class == "Spa và Điều trị da"){
+											$c = "dieu-tri-da";
+											$color = "#70f";
+										}elseif($class == "Trẻ hóa da"){
+											$c = "tre-hoa-da";
+											$color = "#0088CC";
+										}elseif($class == "Chăm sóc cơ thể"){
+											$c = "cham-soc-co-the";
+											$color = "#F200A1";
+										}elseif($class == "Thẩm mỹ"){
+											$c = "tham-my";
+											$color = "#0A7812f";
+										}elseif($class == "Phun thiêu thẩm mỹ"){
+											$c = "phun-thieu-tham-my";
+											$color = "#E2C912";
+										}
+									@endphp
+										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item {{ $c }}">
 											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
 												<div class="portfolio-item hover-effect-1">
 														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
 															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
 																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg" class="img-fluid" alt=""></a>
+																	<a href="{{ route('spa.service.service', str_slug($service->name)) }}"><img src="/upload/{{ $service->img }}" style="height: 300px" class="img-fluid" alt="{{ $service->title }}"></a>
 																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Trị Thâm Mụn</span>
-																		<span class="thumb-info-type" style="background-color: #70f;" >Điều trị da</span>
+																		<span class="thumb-info-inner">{{ $service->name }}</span>
+																		<span class="thumb-info-type" style="background-color: {{ $color }};" >{{ $class }}</span>
 																	</span>
 																</span>
 															</span>
@@ -85,570 +110,32 @@
 												</div>
 											</div>
 										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Trị Sẹo Rỗ</span>
-																		<span class="thumb-info-type" style="background-color: #70f;" >Điều trị da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Điều Trị Sẹo Rỗ</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Trị Mụn</span>
-																		<span class="thumb-info-type" style="background-color: #70f;" >Điều trị da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Điều Trị Mụn</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Trị Nhám-Tàng Nhang</span>
-																		<span class="thumb-info-type" style="background-color: #70f;" >Điều trị da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Điều Trị Nhám - Tàng nhang</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Phi Kim - Lăn Kim</span>
-																		<span class="thumb-info-type" style="background-color: #70f;" >Điều trị da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Điều Trị Phi Kim - Lăn Kim</a></h2>
-												</div>
-											</div>
-										</div>
-									<!--Hết Điều Trị Da -->
-									<!--Star Chăm sóc Da-->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Collagen Căn Bóng</span>
-																		<span class="thumb-info-type" style="background-color:#e67300;" >Chăm sóc da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Collagen Căn Bóng</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Chăm Sóc Da Cơ Bản</span>
-																		<span class="thumb-info-type" style="background-color:#e67300;" >Chăm sóc da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Chăm Sóc Da Cơ Bản</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Đào Thải Độc Tố</span>
-																		<span class="thumb-info-type" style="background-color:#e67300;" >Chăm sóc da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Đào Thải Độc Tố</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Chăm Sóc Da Cơ Bản</span>
-																		<span class="thumb-info-type" style="background-color:#e67300;" >Chăm sóc da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Chăm Sóc Da Cơ Bản</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item dieu-tri-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Da Trắng Sáng Octoline</span>
-																		<span class="thumb-info-type" style="background-color:#e67300;" >Chăm sóc da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Da Trắng Sáng Octoline</a></h2>
-												</div>
-											</div>
-										</div>
-									<!-- End Chăm sóc da -->
-									<!-- Start Trẻ Hóa Da -->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tre-hoa-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">HIFU Nâng Cơ</span>
-																		<span class="thumb-info-type" style="background-color:#269900;" >Trẻ Hóa Da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">HIFU Nâng Cơ</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tre-hoa-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">PRP Trẻ Hóa Da</span>
-																		<span class="thumb-info-type" style="background-color:#269900;" >Trẻ Hóa Da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">PRP Trẻ Hóa Da</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tre-hoa-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Laser Carbon</span>
-																		<span class="thumb-info-type" style="background-color:#269900;" >Trẻ Hóa Da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Laser Carbon</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tre-hoa-da px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Laser Co2 Fractional</span>
-																		<span class="thumb-info-type" style="background-color:#269900;" >Trẻ Hóa Da</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Laser Co2 Fractional</a></h2>
-												</div>
-											</div>
-										</div>
-									<!-- End trẻ Hóa Da -->
-									<!-- Chăm sóc cơ thể -->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item cham-soc-co-the px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Cấy Tinh Chất Giảm Béo</span>
-																		<span class="thumb-info-type" style="background-color:#b30086;" >Chăm Sóc Cơ Thể</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Cấy Tinh Chất Giảm Béo</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item cham-soc-co-the px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Giảm Béo Cavi LPO</span>
-																		<span class="thumb-info-type" style="background-color:#b30086;" >Chăm Sóc Cơ Thể</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Giảm Béo Cavi LPO</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item cham-soc-co-the px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Tắm Trắng White Plus</span>
-																		<span class="thumb-info-type" style="background-color:#b30086;" >Chăm Sóc Cơ Thể</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Tắm Trắng White Plus</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item cham-soc-co-the px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Tắm Trắng Cao Cấp Hoàng Gia</span>
-																		<span class="thumb-info-type" style="background-color:#b30086;" >Chăm Sóc Cơ Thể</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Tắm Trắng Cao cấp Hoàng Gia</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item cham-soc-co-the px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Triệt Lông</span>
-																		<span class="thumb-info-type" style="background-color:#b30086;" >Chăm Sóc Cơ Thể</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Triệt Lông</a></h2>
-												</div>
-											</div>
-										</div>
-									<!--End Chăm sóc Cơ thể -->
-									<!--Start Thẩm mỹ ngoại khoa -->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Căng Da Mặt</span>
-																		<span class="thumb-info-type" style="background-color:#b38600;" >Thẩm mỹ ngoại khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Căng Da Mặt</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Nâng Mũi</span>
-																		<span class="thumb-info-type" style="background-color:#b38600;" >Thẩm mỹ ngoại khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Nâng Mũi</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Cắt Mí</span>
-																		<span class="thumb-info-type" style="background-color:#b38600;" >Thẩm mỹ ngoại khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Cắt Mí</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Lúm Đồng Tiền</span>
-																		<span class="thumb-info-type" style="background-color:#b38600;" >Thẩm mỹ ngoại khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Lúm Đồng Tiền</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Hút Mỡ Giảm Béo</span>
-																		<span class="thumb-info-type" style="background-color:#b38600;" >Thẩm mỹ ngoại khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Hút Mỡ Giảm Béo</a></h2>
-												</div>
-											</div>
-										</div>
-									<!--End Thẩm mỹ ngoại khoa -->
-									<!--Start Thẩm mỹ nội khoa -->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Filter</span>
-																		<span class="thumb-info-type" style="background-color:#990000;" >Thẩm mỹ nội khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Filter</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item tham-my-ngoai-khoa px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Botox</span>
-																		<span class="thumb-info-type" style="background-color:#990000;" >Thẩm mỹ nội khoa</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Botox</a></h2>
-												</div>
-											</div>
-										</div>
-									<!--End Thẩm mỹ nội khoa -->
-									<!--Start Phun Thiêu thẩm mỹ-->
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item phun-thieu-tham-my px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Phun Lông Mày Tán Bột</span>
-																		<span class="thumb-info-type" style="background-color:#4d0066;" >Phun Thiêu thẩm mỹ</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Phun Lông Mày Tán Bột</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item phun-thieu-tham-my px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Phun Lông Mày Lụa</span>
-																		<span class="thumb-info-type" style="background-color:#4d0066;" >Phun Thiêu thẩm mỹ</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Phun Lông Mày Lụa</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item phun-thieu-tham-my px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Phun Mí Mở Tròng</span>
-																		<span class="thumb-info-type" style="background-color:#4d0066;" >Phun Thiêu thẩm mỹ</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Phun Mí Mở Tròng</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item phun-thieu-tham-my px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Phun Môi Hồng Baby Callogen</span>
-																		<span class="thumb-info-type" style="background-color:#4d0066;" >Phun Thiêu thẩm mỹ</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Phun Môi Hồng Baby Callogen</a></h2>
-												</div>
-											</div>
-										</div>
-										<div class="col-12 col-sm-6 col-lg-4 col-xl-3 isotope-item phun-thieu-tham-my px-4">
-											<div class="appear-animation" data-appear-animation="fadeInUp" data-plugin-options="{'accY': -150}" data-appear-animation-delay="">
-												<div class="portfolio-item hover-effect-1">
-														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
-															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
-																<span class="thumb-info-wrapper">
-																	<a href="service.html"><img src="/templates/spa/img/previews/preview-one-page.jpg" class="img-fluid" alt=""></a>
-																	<span class="thumb-info-title">
-																		<span class="thumb-info-inner">Phun Khử Thâm Môi</span>
-																		<span class="thumb-info-type" style="background-color:#4d0066;" >Phun Thiêu thẩm mỹ</span>
-																	</span>
-																</span>
-															</span>
-														</div>
-													<h2 class="font-weight-semibold text-3 text-center"><a href="index-classic.html" class="text-color-light text-decoration-none text-1 text-uppercase">Phun Khử Thâm Môi</a></h2>
-												</div>
-											</div>
-										</div>
+									@endforeach
 									<!--End Phun Thiêu thẩm mỹ -->
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="row my-4 bg-color-light-scale-3 pb-5 p-relative z-index-1">
+						<div class="row my-4 bg-color-dark-scale-3 pb-5 p-relative z-index-1">
 							<div class="col text-center mt-3 mb-5">
-								<p>Sure! <strong class="text-color-light">All demos are included</strong>, choose one and start right now to build your website.</p>
-								<a href="index-classic.html" class="btn btn-light-2 btn-outline btn-rounded btn-xl font-weight-semibold text-2 px-5 py-3 box-shadow-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="800">VIEW MAIN DEMO</a>
+								<p>Sure! <strong class="text-color-light">Tất cả dịch vụ của chúng tôi</strong>, liên hệ ngay để được tư vấn miễn phí.</p>
+								<a href="{{ route('spa.index.contact') }}" class="btn btn-light-2 btn-outline btn-rounded btn-xl font-weight-semibold text-2 px-5 py-3 box-shadow-2 appear-animation" data-appear-animation="fadeInUp" data-appear-animation-delay="800">Liên hệ</a>
 							</div>
 						</div>
 					</div>
 				</section>
 			</div>
+@stop
+@section('meta')
+<title>Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng</title>
+		<meta name="keywords" content="spa da nang, tham my vien da nang, da nang spa, cham soc da, giam mo bung" />
+		<meta name="description" content='Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ' />
+
+		<meta property="og:title" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+		<meta property="og:description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng sử dụng mỹ phẩm cao cấp trên thế giới" />
+		<meta property="og:image" content= "/templates/spa/img/bg-2.jpg" />
+
+		<meta itemprop="name" content="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+		<meta itemprop="description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài" />
+		<meta itemprop="image" content= "/templates/spa/img/bg-2.jpg" />
 @stop

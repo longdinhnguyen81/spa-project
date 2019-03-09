@@ -51,6 +51,7 @@
 										<div class="post-meta">
 											<span><i class="far fa-folder"></i> <a href="#">{{ $news->cat->name }}</a></span>
 										</div>
+											<span><div class="fb-like" data-href="https://spa.vinasofts.vn" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></span>
 
 										<p>{{ $news->description }}</p>
 										<p>{!! $news->detail !!} </p>
@@ -67,7 +68,9 @@
 										</div>														
 									</div>
 								</article>
-							
+								<div class="fb-comments" data-href="{{ route('spa.news.detail', ['slug' => str_slug($news->title), 'id' => $news->id]) }}" data-numposts="5"></div>
+								<div id="fb-root"></div>
+								<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1797819373651791&autoLogAppEvents=1"></script>
 							</div>
 						</div>
 					</div>
@@ -75,4 +78,19 @@
 				</div>
 
 			</div>
+@stop
+@section('meta')
+<title>{{ $news->title }}</title>
+<meta name="keywords" content="spa da nang, tham my vien da nang, da nang spa, cham soc da, giam mo bung" />
+<meta name="description" content='Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ' />
+<meta name="news_keywords" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ">
+
+<meta property="og:title" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+<meta property="og:description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng sử dụng mỹ phẩm cao cấp trên thế giới" />
+<meta property="og:image" content= "/upload/{{ $news->img }}" />
+<meta property="og:url" itemprop="url" content="{{ route('spa.news.detail',['slug' => str_slug($news->title), 'id' => $news->id]) }}">
+
+<meta itemprop="name" content="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+<meta itemprop="description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài" />
+<meta itemprop="image" content= "/upload/{{ $news->img }}" />
 @stop

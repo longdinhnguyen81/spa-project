@@ -31,7 +31,7 @@
 					<div class="row justify-content-center">
 						<div class="col-xl-8 text-center mb-4">
 							<h2 class="font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeIn">Hãy để lại thông tin của các bạn</h2>
-							<p class="line-height-9 text-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"><span class="opacity-7">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras volutpat id sapien ac varius. Fusce hendrerit ligula a consectetur ullamcorper. Vestibulum varius pharetra lorem, in maximus libero placerat sed.</span></p>
+							<p class="line-height-9 text-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"><span class="opacity-7">Các bạn vui lòng để lại thông tin bên dưới, tư vấn viên của chúng tôi sẽ liên hệ với bạn.</span></p>
 						</div>
 					</div>
 					<div class="container">
@@ -105,21 +105,19 @@
 								<ul class="list list-icons list-icons-style-2 mt-2">
 									<li><i class="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Địa chỉ:</strong> 455 Trần Hưng Đạo – TP. Đà Nẵng</li>
 									<li><i class="fas fa-phone top-6"></i> <strong class="text-dark">Số điện thoại:</strong> 0934 734 555</li>
-									<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:mail@example.com">mail@example.com</a></li>
+									<li><i class="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="danaspa455@gmail.com">danaspa455@gmail.com</a></li>
 								</ul>
 							</div>
 
 							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
-								<h4 class="pt-5">Business <strong>Hours</strong></h4>
+								<h4 class="pt-5">Giờ <strong>làm việc</strong></h4>
 								<ul class="list list-icons list-dark mt-2">
-									<li><i class="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
-									<li><i class="far fa-clock top-6"></i> Saturday - 9am to 2pm</li>
-									<li><i class="far fa-clock top-6"></i> Sunday - Closed</li>
+									<li><i class="far fa-clock top-6"></i> 8:00 đến 20:00 hàng ngày</li>
 								</ul>
 							</div>
 
-							<h4 class="pt-5">Get in <strong>Touch</strong></h4>
-							<p class="lead mb-0 text-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget leo at velit imperdiet varius. In eu ipsum vitae velit congue iaculis vitae at risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							<h4 class="pt-5">Liên hệ <strong>ngay</strong></h4>
+							<p class="lead mb-0 text-4">Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</p>
 
 						</div>
 
@@ -130,4 +128,19 @@
 				<!-- End service -->
 
 			</div>
+@stop
+@section('meta')
+<title>Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng</title>
+		<meta name="keywords" content="spa da nang, tham my vien da nang, da nang spa, cham soc da, giam mo bung" />
+		<meta name="description" content='Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ' />
+		<meta name="news_keywords" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ">
+
+		<meta property="og:title" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+		<meta property="og:description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng sử dụng mỹ phẩm cao cấp trên thế giới" />
+		<meta property="og:image" content= "/templates/spa/img/logo.png" />
+		<meta property="og:url" itemprop="url" content="{{ route('spa.index.contact') }}">
+
+		<meta itemprop="name" content="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+		<meta itemprop="description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài" />
+		<meta itemprop="image" content= "/templates/spa/img/logo.png" />
 @stop

@@ -28,6 +28,9 @@ class AppServiceProvider extends ServiceProvider
         view()->share('newservices', $newservices);
         view()->share('ranservices', $ranservices);
         view()->share('newblogs', $newblogs);
+
+        $getservices = Service::where('active', 1)->with('catpackage')->orderBy(\DB::raw('RAND()'))->limit(8)->get();
+        view()->share('getservices', $getservices);
     }
 
     /**

@@ -31,6 +31,8 @@ class IndexController extends Controller
         ]);
         $contact->save();
         return redirect(route('spa.index.contact'))->with('msg', 'Gửi liên hệ thành công!');
-
+    }
+    public function aboutus(){
+        return view('spa.index.aboutus');
     }
 }

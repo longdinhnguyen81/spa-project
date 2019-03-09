@@ -42,7 +42,7 @@ class NewsController extends Controller
 			$img =  $path2->store('/', ['disk' => 'upload']);
             $news->img = $img;
         }
-        $news->cat_id = $request->cat_id;
+        $news->category_id = $request->cat_id;
         $news->keywords = $request->keywords;
     	$news->save();
     	return redirect(route('admin.news.index'))->with('msg', 'Thêm thành công');
@@ -72,7 +72,7 @@ class NewsController extends Controller
     	$news->title = $request->title;
     	$news->description = $request->description;
         $news->detail = $request->detail;
-    	$news->cat_id = $request->cat_id;
+    	$news->category_id = $request->cat_id;
 
     	$news->update();
     	return redirect(route('admin.news.index'))->with('msg', 'Sửa thành công');

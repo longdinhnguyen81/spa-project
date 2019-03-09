@@ -54,7 +54,7 @@
 		              <div class="controls">
 		                <select name="cat_id">
 		            	@foreach($cats as $cat)
-		            	  @if($cat->id == $news->cat_id)	
+		            	  @if($cat->id == $news->category_id)	
 		                  	<option selected="selected" value="{{$cat->id}}">{{$cat->name}}</option>
 		                  @else
 		                  	<option value="{{$cat->id}}">{{$cat->name}}</option>

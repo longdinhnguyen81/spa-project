@@ -51,7 +51,7 @@
 									</div>
 								</div>
 								<div style="margin-bottom:20px;">
-									<img alt="" class="img-fluid rounded" src="img/slide-hinh/2.jpg">
+									<img alt="" class="img-fluid rounded" src="/templates/spa/img/slide-hinh/2.jpg">
 								</div>
 
 								<div class="tabs tabs-dark mb-4 pb-2">
@@ -65,7 +65,7 @@
 														<div class="post-image">
 															<div class="img-thumbnail img-thumbnail-no-borders d-block">
 																<a href="blog-post.html">
-																	<img src="img/blog/square/blog-11.jpg" width="50" height="50" alt="">
+																	<img src="/templates/spa/img/blog/square/blog-11.jpg" width="50" height="50" alt="">
 																</a>
 															</div>
 														</div>
@@ -80,7 +80,7 @@
 														<div class="post-image">
 															<div class="img-thumbnail img-thumbnail-no-borders d-block">
 																<a href="blog-post.html">
-																	<img src="img/blog/square/blog-24.jpg" width="50" height="50" alt="">
+																	<img src="/templates/spa/img/blog/square/blog-24.jpg" width="50" height="50" alt="">
 																</a>
 															</div>
 														</div>
@@ -92,7 +92,7 @@
 														<div class="post-image">
 															<div class="img-thumbnail img-thumbnail-no-borders d-block">
 																<a href="blog-post.html">
-																	<img src="img/blog/square/blog-42.jpg" width="50" height="50" alt="">
+																	<img src="/templates/spa/img/blog/square/blog-42.jpg" width="50" height="50" alt="">
 																</a>
 															</div>
 														</div>
@@ -104,4 +104,8 @@
 											</div>
 										</div>
 									</div>
+									<div class="fb-page" data-href="https://www.facebook.com/danabeautyclinicandacademy/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/danabeautyclinicandacademy/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/danabeautyclinicandacademy/">DaNa Beauty Clinic &amp; Academy</a></blockquote></div>
+    								<div id="fb-root"></div>
+									<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1797819373651791&autoLogAppEvents=1"></script>
+    							</div>
 								</div>		

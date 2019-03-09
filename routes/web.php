@@ -67,6 +67,10 @@ Route::namespace('Spa')->group(function(){
 		'uses' => 'ServiceController@learn',
 		'as' => 'spa.service.learn'
 	]);
+	Route::get('gioi-thieu', [
+		'uses' => 'IndexController@aboutus',
+		'as' => 'spa.index.aboutus'
+	]);
 	Route::get('blog', [
 		'uses' => 'NewsController@index',
 		'as' => 'spa.news.index'

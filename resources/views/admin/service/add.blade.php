@@ -2,8 +2,8 @@
 @section('content')
 <div id="content">
   <div id="content-header">
-    <div id="breadcrumb"> <a href="{{route('admin.index.index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Trang chủ</a> <a href="{{route('admin.news.index')}}">Quản lý tin tức</a> <a href="" class="current">Thêm tin tức</a> </div>
-    <h1>Quản lý tin tức</h1>
+    <div id="breadcrumb"> <a href="{{route('admin.index.index')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Trang chủ</a> <a href="{{route('admin.news.index')}}">Quản lý dịch vụ</a> <a href="" class="current">Thêm dịch vụ</a> </div>
+    <h1>Quản lý dịch vụ</h1>
   </div>
   <div class="container-fluid"><hr>
     <div class="row-fluid">
@@ -19,10 +19,10 @@
 		@endif
         <div class="widget-box">
           <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
-            <h5>Thêm tin tức</h5>
+            <h5>Thêm dịch vụ</h5>
           </div>
 	          <div class="widget-content nopadding">
-	            <form class="form-horizontal" method="post" action="{{route('admin.news.add')}}" name="number_validate" id="number_validate" novalidate="novalidate" enctype="multipart/form-data">
+	            <form class="form-horizontal" method="post" action="{{route('admin.service.add')}}" name="number_validate" id="number_validate" novalidate="novalidate" enctype="multipart/form-data">
 	            	{{csrf_field()}}
 	              <div class="control-group">
 	                <label class="control-label">Tên hiển thị:</label>
@@ -33,7 +33,7 @@
 	              <div class="control-group">
 	                <label class="control-label">Tiêu đề:</label>
 	                <div class="controls">
-	                  <input type="text" name="title" id="required" value="{{ old('name') }}" style="width: 50%" />
+	                  <input type="text" name="title" id="required" value="{{ old('title') }}" style="width: 50%" />
 	                </div>
 	              </div>
 	              <div class="control-group">
@@ -50,7 +50,7 @@
 	              </div>
 
 	              <div class="control-group">
-		              <label class="control-label">Danh mục tin tức</label>
+		              <label class="control-label">Danh mục dịch vụ</label>
 		              <div class="controls">
 		                <select name="cat_id">
 		            	@foreach($cats as $cat)

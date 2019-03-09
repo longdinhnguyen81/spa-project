@@ -6,11 +6,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Vinasofts.vn | Thiết kế website đẹp tại đà nẵng</title>	
-
-		<meta name="keywords" content="HTML5 Template" />
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
+		@yield('meta')
 
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="/templates/spa/img/favicon.ico" type="image/x-icon" />
@@ -40,7 +36,7 @@
 		<link rel="stylesheet" href="/templates/spa/css/skins/default.css">
 		<style>
 			#header .header-nav-main nav > ul > li > a {
-				font-size:16px;
+				font-size:14px;
 				font-weight: 520;
 			}
 			.thumb-info.thumb-info-bottom-info .thumb-info-title {
@@ -88,7 +84,7 @@
 											<nav class="header-nav-top">
 												<ul class="nav nav-pills text-uppercase text-2">
 													<li class="nav-item nav-item-anim-icon d-none d-md-block">
-														<a class="nav-link pl-0" href="/"><i class="fas fa-angle-right"></i> Trang chủ</a>
+														<a class="nav-link pl-0" href="{{ route('spa.index.aboutus') }}"><i class="fas fa-angle-right"></i> Giới thiệu</a>
 													</li>
 													<li class="nav-item nav-item-anim-icon d-none d-md-block">
 														<a class="nav-link" href="{{ route('spa.index.contact') }}"><i class="fas fa-angle-right"></i> Liên hệ</a>
@@ -102,10 +98,10 @@
 											<nav class="header-nav-top">
 												<ul class="nav nav-pills">
 													<li class="nav-item">
-														<a href="mailto:mail@domain.com"><i class="far fa-envelope text-4 text-color-primary" style="top: 1px;"></i> mail@domain.com</a>
+														<a href="danaspa455@gmail.com"><i class="far fa-envelope text-4 text-color-primary" style="top: 1px;"></i> danaspa455@gmail.com</a>
 													</li>
 													<li class="nav-item">
-														<a href="tel:123-456-7890"><i class="fab fa-whatsapp text-4 text-color-primary" style="top: 0;"></i> 0934 734 555</a>
+														<a href="tel:0934734555"><i class="fab fa-whatsapp text-4 text-color-primary" style="top: 0;"></i> 0934 734 555</a>
 													</li>
 												</ul>
 											</nav>
@@ -132,13 +128,22 @@
 												<nav class="collapse">
 													<ul class="nav nav-pills" id="mainNav">
 														<li class="dropdown">
-															<a class="dropdown-item active" href="/">
+															<a class="dropdown-item {{ request()->is('/') ? 'active' : '' }}" href="/">
 																Trang chủ
 															</a>
 														</li>
 														<li class="dropdown">
-															<a class="dropdown-item dropdown-toggle" href="{{ route('spa.service.index') }}">
-																Dịch Vụ Làm Đẹp
+															<a class="dropdown-item dropdown-toggle {{ request()->is('gioi-thieu') ? 'active' : '' }}" href="{{ route('spa.index.aboutus') }}">
+																Giới Thiệu
+															</a>
+															<ul class="dropdown-menu">
+																<li><a class="dropdown-item" href="#">Câu chuyện của dana</a></li>
+																<li><a class="dropdown-item" href="#">Hình ảnh và video</a></li>
+															</ul>
+														</li>
+														<li class="dropdown">
+															<a class="dropdown-item dropdown-toggle {{ request()->is('dich-vu*') ? 'active' : '' }}" href="{{ route('spa.service.index') }}">
+																Làm Đẹp
 															</a>
 															<ul class="dropdown-menu">
 													@foreach($catpackages as $catp)
@@ -159,27 +164,18 @@
 															</ul>
 														</li>
 														<li class="dropdown">
-															<a class="dropdown-item" href="{{ route('spa.service.learn') }}">
+															<a class="dropdown-item {{ request()->is('day-nghe') ? 'active' : '' }}" href="{{ route('spa.service.learn') }}">
 																Dạy nghề
 															</a>
 														</li>
 														<li class="dropdown">
-															<a class="dropdown-item dropdown-toggle" href="#">
-																Hình ảnh
-															</a>
-															<ul class="dropdown-menu">
-																<li><a class="dropdown-item" href="#">Câu chuyện khách hàng</a></li>
-																<li><a class="dropdown-item" href="#">Hình ảnh và video</a></li>
-															</ul>
-														</li>
-														<li class="dropdown">
-															<a class="dropdown-item" href="{{ route('spa.index.contact') }}">
+															<a class="dropdown-item {{ request()->is('lien-he') ? 'active' : '' }}" href="{{ route('spa.index.contact') }}">
 																Liên hệ
 															</a>
 														</li>
 														<li class="dropdown">
-															<a class="dropdown-item dropdown-toggle" href="{{ route('spa.news.index') }}">
-																Blog
+															<a class="dropdown-item dropdown-toggle {{ request()->is('blog*') || request()->is('*.html') ? 'active' : '' }}" href="{{ route('spa.news.index') }}">
+																Tin tức
 															</a>
 															<ul class="dropdown-menu">
 																@foreach($categorys as $cat)

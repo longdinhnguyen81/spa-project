@@ -3,28 +3,28 @@
 					<div class="row py-5">
 						<div class="col-lg-4 mb-5 mb-lg-0 text-center text-lg-left pt-3">
 							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Dana SPA</h5>
-							<p class="text-4 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Cras volutpat id sapien ac varius.</p>
+							<p class="text-4 mb-3">Chúng tôi tự tin là đối tác của các bạn<br> trong các lĩnh vực làm đẹp.</p>
 						</div>
 						<div class="col-lg-2 mb-4 mb-md-0 text-center text-lg-left pt-3">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Pages</h5>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Blog</h5>
 							<ul class="list list-icons list-icons-sm d-inline-flex flex-column">
-								<li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="page-services.html" class="link-hover-style-1 ml-1"> Our Services</a></li>
-								<li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="about-us.html" class="link-hover-style-1 ml-1"> About Us</a></li>
-								<li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="contact-us.html" class="link-hover-style-1 ml-1"> Contact Us</a></li>
+								@foreach($categorys as $cat)
+								<li class="text-4 mb-2"><i class="fas fa-angle-right"></i><a href="{{ route('spa.news.news', str_slug($cat->name)) }}" class="link-hover-style-1 ml-1">{{ $cat->name }}</a></li>
+								@endforeach
 							</ul>
 						</div>
 						<div class="col-lg-3 mb-4 mb-lg-0 text-center text-lg-left pt-3">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Contact Us</h5>
-							<p class="text-4 mb-2"><span class="text-color-light">Address:</span> 1234 Street Name, City Name, USA</p>
-							<p class="text-4 mb-2"><span class="text-color-light">Phone:</span> (123) 456-7890</p>
-							<p class="text-4 mb-2"><span class="text-color-light">Email:</span> <a href="mailto:mail@example.com">mail@example.com</a></p>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Liên hệ</h5>
+							<p class="text-4 mb-2"><span class="text-color-light">Địa chỉ:</span> 455 Trần Hưng Đạo – TP. Đà Nẵng</p>
+							<p class="text-4 mb-2"><span class="text-color-light">Số điện thoại:</span> 0934 734 555</p>
+							<p class="text-4 mb-2"><span class="text-color-light">Email:</span> <a href="mailto:danaspa455@gmail.com">danaspa455@gmail.com</a></p>
 						</div>
 						<div class="col-lg-3 text-center text-lg-left pt-3">
-							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Follow Us</h5>
+							<h5 class="text-5 text-transform-none font-weight-semibold text-color-light mb-4">Theo dõi</h5>
 							<ul class="footer-social-icons social-icons social-icons-clean social-icons-big social-icons-opacity-light social-icons-icon-light mt-0 mt-lg-3">
-								<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-								<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
-								<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+								<li class="social-icons-facebook"><a href="https://www.facebook.com/danabeautyclinicandacademy" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+								<li class="social-icons-twitter"><a href="https://www.facebook.com/danabeautyclinicandacademy" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+								<li class="social-icons-linkedin"><a href="https://www.facebook.com/danabeautyclinicandacademy" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -34,7 +34,7 @@
 						<div class="py-2">
 							<div class="row py-4">
 								<div class="col d-flex align-items-center justify-content-center mb-4 mb-lg-0">
-									<p>© Copyright 2018. All Rights Reserved.</p>
+									<p> Vinasofts © Copyright 2018. All Rights Reserved.</p>
 								</div>
 							</div>
 						</div>

@@ -9,12 +9,11 @@ use App\Service;
 class ServiceController extends Controller
 {
     public function index(){
-    	return view('spa.service.index');
+        $services = Service::with('catpackage')->where('active', 1)->orderBy(\DB::raw('RAND()'))->get();
+    	return view('spa.service.index', compact('services'));
     }
     public function service($slug){
-    	$cat = str_replace("-"," ",$slug);
-    	$cats = str_replace("d","đ",$cat);
-    	$service = Service::where('name','like' ,'%'.$cats.'%')->with('catpackage')->first();
+    	$service = Service::where('slug', $slug)->with('catpackage')->first();
     	return view('spa.service.service', compact('service'));
     }
     public function learn(){

@@ -14,8 +14,7 @@ class NewsController extends Controller
     	return view('spa.news.index', compact('news'));
     }
     public function news($slug){
-    	$cat = str_replace('-', ' ', $slug);
-    	$cats = Category::where('name','like' ,'%'.$cat.'%')->first();
+    	$cats = Category::where('slug_name',$slug)->first();
         $name = $cats->name;
         $news = News::where('active', 1)->where('category_id', $cats->id)->with('cat')->paginate(3);
     	return view('spa.news.news', compact('news', 'name'));
