@@ -1,27 +1,17 @@
 @extends('templates.spa.master')
 @section('content')
 	<div role="main" class="main" style="background-color: #eee">
-        <div class="slider-container rev_slider_wrapper">
-			<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 4000, 'gridwidth': 1170, 'gridheight': 400, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'on' }, 'navigation' : {'arrows': { 'enable': false }, 'bullets': {'false': true, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
-				<ul>
-					<li>
-
-                		<img src="/upload/{{ $service->picture }}"
-                			alt=""
-                			data-bgposition="center center" 
-                			data-bgfit="cover" 
-                			data-bgrepeat="no-repeat" 
-                			class="img-fluid"
-                			style="min-height: 110px;">
-                	</li>
-                </ul>
-            </div>
-        </div
+	    <!-- Banner Cover -->
+	    <img src="/upload/{{ $service->picture }}"
+			alt="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
+			data-bgposition="center center" 
+			data-bgfit="cover" 
+			data-bgrepeat="no-repeat" 
+			class="img-fluid">
 
 		<!-- Intro -->
 		<div class="home-intro home-intro-quaternary" style="background-color:#333;margin:0;" id="home-intro">
 			<div class="container">
-
 				<div class="row text-center">
 					<div class="col">
 						<p class="mb-0">
@@ -30,7 +20,6 @@
 						</p>
 					</div>
 				</div>
-
 			</div>
 		</div>
 		<!-- End Intro -->
@@ -39,7 +28,7 @@
 		<div class="container py-4" style="background-color: #fff; margin-top:40px;">
 
 			<div class="row">
-				<div class="col-lg-9">
+				<div class="col-lg-8">
 					<div class="blog-posts single-post">
 					
 						<article class="post post-large blog-single-post border-0 m-0 p-0">

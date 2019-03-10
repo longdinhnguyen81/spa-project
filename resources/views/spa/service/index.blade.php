@@ -6,7 +6,7 @@
 						<ul>
 							<li class="" data-transition="fade">
 								<img src="/templates/spa/img/tham-my/slide/slide-1.png"
-									alt=""
+									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 
@@ -14,7 +14,7 @@
 							</li>
 							<li class="" data-transition="fade">
 								<img src="/templates/spa/img/tham-my/slide/slide-2.png"
-									alt=""
+									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 
@@ -22,7 +22,7 @@
 							</li>
 							<li class="" data-transition="fade">
 								<img src="/templates/spa/img/tham-my/slide/slide-3.png"
-									alt=""
+									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 
@@ -53,8 +53,8 @@
 							<div class="col-auto col-sm-12 col-md-auto">
 								<ul class="nav nav-light nav-active-style-1 sort-source justify-content-center flex-column flex-sm-row" data-sort-id="portfolio" data-option-key="filter">
 									<li class="nav-item" data-option-value="*"><a class="nav-link active" href="#">Tất cả</a></li>
-									<li class="nav-item" data-option-value=".dieu-tri-da"><a class="nav-link" href="#">Điều Trị Da</a></li>
-									<li class="nav-item" data-option-value=".tre-hoa-da"><a class="nav-link" href="#">Trẻ Hóa Da</a></li>
+									<li class="nav-item" data-option-value=".dieu-tri-da"><a class="nav-link" href="#">Spa & Điều trị da</a></li>
+									<li class="nav-item" data-option-value=".tre-hoa-da"><a class="nav-link" href="#">Trẻ Hóa Da </a></li>
 									<li class="nav-item" data-option-value=".cham-soc-co-the"><a class="nav-link" href="#">Chăm Sóc Cơ Thể</a></li>
 									<li class="nav-item" data-option-value=".tham-my-ngoai-khoa"><a class="nav-link" href="#">Thẩm Mỹ</a></li>
 									<li class="nav-item" data-option-value=".phun-thieu-tham-my"><a class="nav-link" href="#">Phun Thiêu Thẩm Mỹ</a></li>
@@ -75,17 +75,17 @@
 									@php	
 										$id = $service->id;
 										$class = $service->catpackage->name;
-										if($class == "Spa và Điều trị da"){
+										if($class == "Spa & Điều trị da"){
 											$c = "dieu-tri-da";
 											$color = "#70f";
-										}elseif($class == "Trẻ hóa da"){
+										}elseif($class == "Trẻ hóa da" || $class == "Chăm sóc da"){
 											$c = "tre-hoa-da";
 											$color = "#0088CC";
 										}elseif($class == "Chăm sóc cơ thể"){
 											$c = "cham-soc-co-the";
 											$color = "#F200A1";
-										}elseif($class == "Thẩm mỹ"){
-											$c = "tham-my";
+										}elseif($class == "Thẩm mỹ ngoại khoa" || $class == "Thẩm mỹ nội khoa"){
+											$c = "tham-my-ngoai-khoa";
 											$color = "#0A7812f";
 										}elseif($class == "Phun thiêu thẩm mỹ"){
 											$c = "phun-thieu-tham-my";

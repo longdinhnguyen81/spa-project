@@ -16,10 +16,10 @@
 
 						<div class=row>
 							<div class=col-md-6>
-								<img src="/templates/spa/img/gioi-thieu-1.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/gioi-thieu-1.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" class="img-fluid box-shadow-custom" /> 
 							</div>
 							<div class=col-md-6>
-								<img src="/templates/spa/img/gioi-thieu-2.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/gioi-thieu-2.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" class="img-fluid box-shadow-custom" /> 
 							</div>
 						</div>
 
@@ -28,125 +28,245 @@
 						<p class="lead font-weight-normal">Sứ mệnh này không đơn giản chỉ là một ý tưởng nung nấu từ đội ngũ lãnh đạo Dana mà nó đã được hiện thực hóa bởi đội ngũ bác sĩ, kỹ thuật viên tay nghề cao được đào tạo chuyên nghiệp theo tiêu chuẩn Hàn Quốc.</p>
 						<p class="lead font-weight-normal">Đặc biệt, Dana tự hào là một trong những thẩm mỹ viện đầu tiên tại Đà Nẵng sở hữu các công nghệ hàng đầu hiện nay được chuyển giao trực tiếp từ Châu Âu giúp cho việc làm đẹp của chị em trở nên hiệu quả và an toàn hơn bao giờ hết!</p>
 
-						<div class="row justify-content-center text-center mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-							<div class="col-lg-8">
-								<p class="text-6 text-color-dark line-height-7 negative-ls-1 px-5">Chúng tôi tự tin là đối tác của các bạn trong các lĩnh vực công nghệ</p>
-								<p class="opacity-9 text-4">100% khách hàng hài lòng khi hợp tác với chúng tôi</p>
-							</div>
-						</div>
+						<p class="text-6 text-color-dark text-center">Hãy đến với DanaSpa thẫm mỹ viện số 1 Đà Nẵng</p>
 						<div class="row featured-boxes featured-boxes-style-4">
 							<div class="col-md-6 col-lg-3">
 								<div class="featured-box featured-box-primary featured-box-effect-4 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="200">
 									<div class="box-content px-4">
-										<i class="icon-featured fas fa-mobile-alt icons text-12"></i>
-										<h4 class="font-weight-bold text-color-dark pb-1 mb-2">Thiết bị hiện đại</h4>
-										<p class="mb-0">Dana Spa luôn được chuyển giao công nghệ mới nhất trên thế giới</p>
+										<i class="icon-featured fas fa-hospital icons text-12"></i>
+										<p class="font-weight-bold text-color-dark pb-1 mb-2">Thiết bị hiện đại</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-3">
 								<div class="featured-box featured-box-primary featured-box-effect-4 appear-animation" data-appear-animation="fadeIn">
 									<div class="box-content px-4">
-										<i class="icon-featured fab fa-edge icons text-12"></i>
-										<h4 class="font-weight-bold text-color-dark pb-1 mb-2">Mỹ phẩm cao cấp</h4>
-										<p class="mb-0">Dana Spa chuyên dùng những dòng sản phẩm cao cấp để phục vụ khách hàng</p>
+										<i class="icon-featured fas fa-spa icons text-12"></i>
+										<p class="font-weight-bold text-color-dark pb-1 mb-2">Mỹ phẩm cao cấp</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-3">
 								<div class="featured-box featured-box-primary featured-box-effect-4 appear-animation" data-appear-animation="fadeIn">
 									<div class="box-content px-4">
-										<i class="icon-featured fas fa-search-dollar icons text-12"></i>
-										<h4 class="font-weight-bold text-color-dark pb-1 mb-2">Bác sĩ nước ngoài</h4>
-										<p class="mb-0">Đội ngũ bác sĩ đến từ đa quốc gia trên thế giới có nhiều năm kinh nghiệm trong nghề</p>
+										<i class="icon-featured fas fa-user-md icons text-12"></i>
+										<p class="font-weight-bold text-color-dark pb-1 mb-2">Bác sĩ nước ngoài</p>
 									</div>
 								</div>
 							</div>
 							<div class="col-md-6 col-lg-3">
 								<div class="featured-box featured-box-primary featured-box-effect-4 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 									<div class="box-content px-4">
-										<i class="icon-featured fas fa-desktop icons text-12"></i>
-										<h4 class="font-weight-bold text-color-dark pb-1 mb-2">Tư vấn chuyên nghiệp</h4>
-										<p class="mb-0">Đội ngũ tư vấn viên nhiệt tình chuyên đưa ra những tư vấn tốt nhất cho khách hàng</p>
+										<i class="icon-featured fas fa-headphones icons text-12"></i>
+										<p class="font-weight-bold text-color-dark pb-1 mb-2">Tư vấn chuyên nghiệp</p>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-								<div class="col">
+							<div class="col">
 
-									<p class="text-6 text-center text-color-primary">Các hình ảnh đẹp tại DanaSpa</p>
+								<p class="text-6 text-center text-color-primary">Các hình ảnh đẹp tại DanaSpa</p>
+								<div class="lightbox mt-3" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
+        							<div class="masonry-loader masonry-loader-showing">
+        								<div class="masonry" data-plugin-masonry data-plugin-options="{'itemSelector': '.masonry-item'}">
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-2.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-2.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-29.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-27.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-5.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-4.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-6.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-5.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-7.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-6.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-24.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-7.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-25.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-23.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        
+        									<div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="img/projects/project-masonry-26.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="img/projects/project-24.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div>
+        									
+        								</div>
+        							</div>
+        						</div>
+								
 
-									<div class="lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
-										<div class="owl-carousel owl-theme stage-margin" data-plugin-options="{'items': 4, 'margin': 10, 'loop': false, 'nav': false, 'dots': false, 'stagePadding': 40}">
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg">
-													<img class="img-fluid img-responsive"  src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg">
-													<img class="img-fluid img-responsive" src="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-1.png">
-													<img class="img-fluid img-responsive" src="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-1.png" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-2.png">
-													<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-2.png" alt="Beauty Image Dana Spa"">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png">
-													<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/laser-carbon-1.png">
-													<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/laser-carbon-1.png" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/HIFU-1.png">
-													<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/HIFU-1.png" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
-											<div>
-												<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png">
-													<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" alt="Beauty Image Dana Spa">
-												</a>
-											</div>
+								<div class="lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
+									<div class="owl-carousel owl-theme stage-margin" data-plugin-options="{'items': 4, 'margin': 10, 'loop': false, 'nav': false, 'dots': false, 'stagePadding': 40}">
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg">
+												<img class="img-fluid img-responsive"  src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" alt="Beauty Image Dana Spa">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg">
+												<img class="img-fluid img-responsive" src="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg" alt="Beauty Image Dana Spa">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-1.png">
+												<img class="img-fluid img-responsive" src="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-1.png" alt="Beauty Image Dana Spa">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-2.png">
+												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-2.png" alt="Beauty Image Dana Spa"">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png">
+												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" alt="Beauty Image Dana Spa">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/laser-carbon-1.png">
+												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/laser-carbon-1.png" alt="Beauty Image Dana Spa">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/HIFU-1.png">
+												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/HIFU-1.png" alt="Beauty Image Dana Spa">
+											</a>
+										</div>
+										<div>
+											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png">
+												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" alt="Beauty Image Dana Spa">
+											</a>
 										</div>
 									</div>
 								</div>
-
 							</div>
+
+						</div>
 					</div>
 
 					<div class="col-lg-4">
-						<p class="mt-5 mb-2 mx-auto text-6 text-color-primary text-center">Giới Thiệu thẩm mỹ viện</p>
-						<div class="embed-responsive embed-responsive-16by9">
+					     <p class="mt-2 mb-2 mx-auto text-6 text-color-primary text-center">Câu chuyện của Dana SPA</p>
+						<p>Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</p>
+						<div class="embed-responsive embed-responsive-16by9 shadow rounded"">
 						  	<iframe width="560" height="315" src="https://www.youtube.com/embed/NR1sWCmQMxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>						
-						<p class="mt-5 mb-2 mx-auto text-6 text-color-primary text-center">Khách hàng sử dụng dịch vụ</p>
-						<div class="owl-carousel owl-theme dots-inside mt-2" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 2000}">
+						</div>
+						<div class="divider divider-small divider-small-center divider-primary">
+							<hr style="width:50%;">
+						</div>					
+						<p class="mt-5 mb-2 mx-auto text-6 text-color-primary text-center">Khách hàng tại DanaSpa</p>
+						<div class="owl-carousel owl-theme dots-inside mt-2 mb-2" data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 2000}">
 							<div>
-								<img src="/templates/spa/img/tham-my/avatar/khach-hang-1.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/tham-my/khach-hang/tam-trang-hoang-gia-3.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
 							</div>
 							<div>
-								<img src="/templates/spa/img/tham-my/avatar/khach-hang-2.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/tham-my/khach-hang/tiem-filter-3.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
 							</div>
 							<div>
-								<img src="/templates/spa/img/tham-my/avatar/khach-hang-3.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/tham-my/khach-hang/cham-soc-da-co-ban-2.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
 							</div>
 							<div>
-								<img src="/templates/spa/img/tham-my/avatar/khach-hang-4.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/tham-my/khach-hang/giam-beo-lipo-2.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
 							</div>
 							<div>
-								<img src="/templates/spa/img/tham-my/avatar/khach-hang-5.png" alt="" class="img-fluid box-shadow-custom" /> 
+								<img src="/templates/spa/img/tham-my/khach-hang/nang-mui-2.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
 							</div>
 						</div>
 						<ul class="list list-icons list-primary mt-5">
@@ -156,10 +276,6 @@
 							<li><i class="fas fa-check"></i> Chúng tôi luôn quan niệm con người là tài sản qúy nhất của công ty, cho dù máy móc có hiện đại đến đâu cũng chịu sự điều khiển của con người.</li>
 							<li><i class="fas fa-check"></i> Một đội ngũ nhân viên luôn được cập nhật học hỏi những kiến thức mới, những ứng dụng công nghệ tiến tiến của nghành thẩm mỹ thế giới từ các chuyên gia thẩm mỹ trong và ngoài nước</li>
 						</ul>
-						<p class="mt-5 mb-2 mx-auto text-6 text-color-primary">100% các khách hàng hài long</p>
-						<div class="embed-responsive embed-responsive-16by9">
-						  	<iframe width="560" height="315" src="https://www.youtube.com/embed/XdBsAXOxYfo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-						</div>
 					</div>
 				</div>
 

@@ -138,7 +138,7 @@
 															</a>
 															<ul class="dropdown-menu">
 																<li><a class="dropdown-item" href="#">Câu chuyện của dana</a></li>
-																<li><a class="dropdown-item" href="#">Hình ảnh và video</a></li>
+																<li><a class="dropdown-item" href="{{ route('spa.index.picture') }}">Hình ảnh và video</a></li>
 															</ul>
 														</li>
 														<li class="dropdown">

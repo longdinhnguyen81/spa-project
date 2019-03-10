@@ -1,11 +1,19 @@
-						<div class="col-lg-3">
-							<aside class="sidebar">
-								<div class="tabs tabs-dark mb-4 pb-2">
-									<ul class="nav nav-tabs">
+						<div class="col-lg-4">
+							<aside class="sidebar sticky-top">
+							    <p class="mt-2 mb-2 mx-auto text-6 text-color-primary text-center">Câu chuyện của Dana SPA</p>
+        						<p>Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</p>
+        						<div class="embed-responsive embed-responsive-16by9 shadow rounded"">
+        						  	<iframe width="560" height="315" src="https://www.youtube.com/embed/NR1sWCmQMxI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        						</div>
+        						<div class="divider divider-small divider-small-center divider-primary">
+        							<hr style="width:50%;">
+        						</div>
+								<div class="tabs tabs-dark mb-4 pb-2 px-2 ">
+									<ul class="nav nav-tabs ">
 										<li class="nav-item active"><a class="nav-link show active text-1 font-weight-bold text-uppercase" href="#popularPosts" data-toggle="tab">Dịch vụ khác</a></li>
 										<li class="nav-item"><a class="nav-link text-1 font-weight-bold text-uppercase" href="#recentPosts" data-toggle="tab">Ngẫu nhiên</a></li>
 									</ul>
-									<div class="tab-content">
+									<div class="tab-content ">
 										<div class="tab-pane active" id="popularPosts">
 											<ul class="simple-post-list">
 											@foreach($newservices as $newservice)
@@ -27,7 +35,7 @@
 											@endforeach
 											</ul>
 										</div>
-										<div class="tab-pane" id="recentPosts">
+										<div class="tab-pane " id="recentPosts">
 											<ul class="simple-post-list">
 												@foreach($ranservices as $ranservice)
 												<li>
@@ -50,62 +58,32 @@
 										</div>
 									</div>
 								</div>
-								<div style="margin-bottom:20px;">
-									<img alt="" class="img-fluid rounded" src="/templates/spa/img/slide-hinh/2.jpg">
+								<p class="mt-5 mb-2 mx-auto text-6 text-color-primary text-center">Khách hàng tại DanaSpa</p>
+        						<div class="owl-carousel owl-theme dots-inside mt-2 mb-2" data-plugin-options="{'items': 1, 'margin': 20, 'animateOut': 'fadeOut', 'autoplay': true, 'autoplayTimeout': 2000}">
+        							<div>
+        								<img src="/templates/spa/img/tham-my/khach-hang/tam-trang-hoang-gia-3.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
+        							</div>
+        							<div>
+        								<img src="/templates/spa/img/tham-my/khach-hang/tiem-filter-3.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
+        							</div>
+        							<div>
+        								<img src="/templates/spa/img/tham-my/khach-hang/cham-soc-da-co-ban-2.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
+        							</div>
+        							<div>
+        								<img src="/templates/spa/img/tham-my/khach-hang/giam-beo-lipo-2.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
+        							</div>
+        							<div>
+        								<img src="/templates/spa/img/tham-my/khach-hang/nang-mui-2.png" alt="thẩm mỹ viện dana uy tín tai đà nẵng" style="width:95%;" class="img-fluid shadow p-3 m-2 rounded" /> 
+        							</div>
+        						</div>
+        						<p>Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</p>
+                                <div class="divider divider-small divider-small-center divider-primary">
+        							<hr style="width:50%;">
+        						</div>
+								<div class= "shadow p-3 m-2 rounded">
+    								<div class="fb-page" data-href="https://www.facebook.com/danabeautyclinicandacademy/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/danabeautyclinicandacademy/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/danabeautyclinicandacademy/">DaNa Beauty Clinic &amp; Academy</a></blockquote></div>
+        								<div id="fb-root"></div>
+    									<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1797819373651791&autoLogAppEvents=1"></script>
+        							</div>
 								</div>
-
-								<div class="tabs tabs-dark mb-4 pb-2">
-									<ul class="nav nav-tabs">
-											<li class="nav-item active"><a class="nav-link show active text-1 font-weight-bold text-uppercase" href="#popularPosts" data-toggle="tab">Người nổi tiếng</a></li>
-										</ul>
-									<div class="tab-content">
-											<div class="tab-pane active" id="popularPosts">
-												<ul class="simple-post-list">
-													<li>
-														<div class="post-image">
-															<div class="img-thumbnail img-thumbnail-no-borders d-block">
-																<a href="blog-post.html">
-																	<img src="/templates/spa/img/blog/square/blog-11.jpg" width="50" height="50" alt="">
-																</a>
-															</div>
-														</div>
-														<div class="post-info">
-															<a href="#">Nguyễn Thu Phượng</a>
-															<div class="post-meta">
-																 Hoa hậu
-															</div>
-														</div>
-													</li>
-													<li>
-														<div class="post-image">
-															<div class="img-thumbnail img-thumbnail-no-borders d-block">
-																<a href="blog-post.html">
-																	<img src="/templates/spa/img/blog/square/blog-24.jpg" width="50" height="50" alt="">
-																</a>
-															</div>
-														</div>
-														<div class="post-info">
-															<a href="#">Nguyễn Văn A</a>
-														</div>
-													</li>
-													<li>
-														<div class="post-image">
-															<div class="img-thumbnail img-thumbnail-no-borders d-block">
-																<a href="blog-post.html">
-																	<img src="/templates/spa/img/blog/square/blog-42.jpg" width="50" height="50" alt="">
-																</a>
-															</div>
-														</div>
-														<div class="post-info">
-															<a href="#">Nguyễn Văn B</a>
-														</div>
-													</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<div class="fb-page" data-href="https://www.facebook.com/danabeautyclinicandacademy/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/danabeautyclinicandacademy/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/danabeautyclinicandacademy/">DaNa Beauty Clinic &amp; Academy</a></blockquote></div>
-    								<div id="fb-root"></div>
-									<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1797819373651791&autoLogAppEvents=1"></script>
-    							</div>
-								</div>		
+							</div>

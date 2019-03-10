@@ -35,4 +35,7 @@ class IndexController extends Controller
     public function aboutus(){
         return view('spa.index.aboutus');
     }
+    public function picture(){
+        return view('spa.index.picture');
+    }
 }

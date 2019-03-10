@@ -4,7 +4,7 @@
 
 
 				<img src="/templates/spa/img/banner-daotao.jpg"
-									alt=""
+									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 

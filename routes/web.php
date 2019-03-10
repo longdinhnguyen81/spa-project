@@ -71,6 +71,10 @@ Route::namespace('Spa')->group(function(){
 		'uses' => 'IndexController@aboutus',
 		'as' => 'spa.index.aboutus'
 	]);
+	Route::get('hinh-anh-video', [
+		'uses' => 'IndexController@picture',
+		'as' => 'spa.index.picture'
+	]);
 	Route::get('blog', [
 		'uses' => 'NewsController@index',
 		'as' => 'spa.news.index'
