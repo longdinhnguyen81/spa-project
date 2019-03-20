@@ -23,7 +23,6 @@
                 <tr>
                   <th>ID</th>
                   <th>Tên danh mục</th>
-                  <th>Danh mục con</th>
                   <th style="text-align:center;width:150px">Chức năng</th>
                 </tr>
               </thead>
@@ -32,20 +31,6 @@
                 <tr class="even gradeA">
                   <td>{{$cat->id}}</td>
                   <td>{{$cat->name}}</td>
-                  <td>
-                    <ul>
-                        @foreach($parent_cats as $parent)
-                          @if($parent->parent_id == $cat->id)
-                            <li>{{$parent->name}}
-                              <a href="{{route('admin.category.edit', $parent->id)}}" class="edit">Sửa</a>
-                              <a onclick="return confirm('Do you want to delete this category?')" href="{{route('admin.category.delete', $cat->id)}}" class="delete">Xóa</a>
-                            </li>
-                          @else
-                            <li>Không</li>
-                          @endif
-                        @endforeach
-                    </ul>
-                  </td>
                   <td class="text-center">
                   	<a href="{{route('admin.category.edit', $cat->id)}}" class="btn btn-primary">Sửa</a>
                   	<a onclick="return confirm('Do you want to delete this category?')" href="{{route('admin.category.delete', $cat->id)}}" class="btn btn-danger">Xóa</a>

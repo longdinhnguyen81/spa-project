@@ -30,17 +30,6 @@
 	                  <input type="text" name="name" id="required" />
 	                </div>
 	              </div>
-	              <div class="control-group">
-		              <label class="control-label">Danh mục cha</label>
-		              <div class="controls">
-		                <select name="parent_id">
-		                  <option value="0">Không</option>
-		            	@foreach($cats as $cat)
-		                  <option value="{{$cat->id}}">{{$cat->name}}</option>
-		                @endforeach
-		                </select>
-		              </div>
-		           </div>
 	              <div class="form-actions">
 	                <input type="submit" value="Thêm" class="btn btn-success">
 	              </div>

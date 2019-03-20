@@ -11663,6 +11663,7 @@ html.boxed .slider-container {
 }
 
 .thumb-info .thumb-info-inner {
+    text-transform: uppercase;
 	-webkit-transition: all 0.3s;
 	transition: all 0.3s;
 	display: block;

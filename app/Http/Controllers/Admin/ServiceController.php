@@ -60,27 +60,38 @@ class ServiceController extends Controller
     		'description' => 'required',
     		'detail' => 'required',
     	]);
+        $service = Service::find($id);
         if($request->file('picture') != null){
             $path1 = $request->file('picture');
             $picture =  $path1->store('/', ['disk' => 'upload']);
+            $app_path = str_replace("\\", '/', public_path());
+            $file_path = $app_path.'/upload/'.$service->picture;
+            unlink($file_path);
+            $service->picture = $picture;
         }
     	if($request->file('img') != null){
     		$path2 = $request->file('img');
 			$img =  $path2->store('/', ['disk' => 'upload']);
+            $app_path = str_replace("\\", '/', public_path());
+            $img_path = $app_path.'/upload/'.$news->img;
+            unlink($img_path);
+            $service->img = $img;
         }
-    	$service = Service::find($id);
         $service->name = $request->name;
     	$service->title = $request->title;
     	$service->description = $request->description;
     	$service->detail = $request->detail;
-        if($picture) { $service->picture = $picture; };
-        if($img) { $service->img = $img; };
 
     	$service->update();
     	return redirect(route('admin.service.index'))->with('msg', 'Sửa thành công');
     }
     public function delete($id){
     	$service = Service::find($id);
+        $app_path = str_replace("\\", '/', public_path());
+        $img_path = $app_path.'/upload/'.$service->img;
+        $file_path = $app_path.'/upload/'.$service->picture;
+        unlink($img_path);
+        unlink($file_path);
     	$service->delete();
     	return redirect(route('admin.service.index'))->with('msg', 'Xoá thành công');
     }

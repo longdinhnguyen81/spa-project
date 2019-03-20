@@ -14,9 +14,6 @@ Route::pattern('id','([0-9]*)');
 Route::pattern('cid','([0-9]*)');
 Route::pattern('slug','(.*)');
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Route::namespace('Ajax')->group(function(){
 	Route::get('/service', [
@@ -66,6 +63,14 @@ Route::namespace('Spa')->group(function(){
 	Route::get('day-nghe', [
 		'uses' => 'ServiceController@learn',
 		'as' => 'spa.service.learn'
+	]);
+	Route::get('day-nghe/khoa-hoc-spa-dao-tao-cham-soc-da-chuyen-nghiep', [
+		'uses' => 'ServiceController@learnskin',
+		'as' => 'spa.service.learnskin'
+	]);
+	Route::get('day-nghe/khoa-hoc-phun-xam-tham-my', [
+		'uses' => 'ServiceController@learnxam',
+		'as' => 'spa.service.learnxam'
 	]);
 	Route::get('gioi-thieu', [
 		'uses' => 'IndexController@aboutus',

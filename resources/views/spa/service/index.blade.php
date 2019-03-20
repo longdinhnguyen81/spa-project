@@ -98,7 +98,7 @@
 														<div class="card border-1" style="border-width:10px; border-color:rgba(254,150,0,0.63);" >
 															<span class="card-img-top thumb-info thumb-info-hide-wrapper-bg">
 																<span class="thumb-info-wrapper">
-																	<a href="{{ route('spa.service.service', str_slug($service->name)) }}"><img src="/upload/{{ $service->img }}" style="height: 300px" class="img-fluid" alt="{{ $service->title }}"></a>
+																	<a href="{{ route('spa.service.service', str_slug($service->name)) }}"><img src="/upload/{{ $service->img }}" class="img-fluid" alt="{{ $service->title }}"></a>
 																	<span class="thumb-info-title">
 																		<span class="thumb-info-inner">{{ $service->name }}</span>
 																		<span class="thumb-info-type" style="background-color: {{ $color }};" >{{ $class }}</span>

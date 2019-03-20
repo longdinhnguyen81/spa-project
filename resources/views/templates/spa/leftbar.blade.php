@@ -20,13 +20,13 @@
 												<li>
 													<div class="post-image">
 														<div class="img-thumbnail img-thumbnail-no-borders d-block">
-															<a href="{{ route('spa.service.service', str_slug($newservice->title)) }}">
+															<a href="{{ route('spa.service.service', $newservice->slug) }}">
 																<img src="/upload/{{ $newservice->img }}" width="50" height="50" alt="{{ $newservice->title }}">
 															</a>
 														</div>
 													</div>
 													<div class="post-info">
-														<a href="{{ route('spa.service.service', str_slug($newservice->title)) }}">{{ $newservice->title }}</a>
+														<a href="{{ route('spa.service.service', $newservice->slug) }}">{{ $newservice->title }}</a>
 														<div class="post-meta">
 															 {{ date_format($newservice->updated_at, 'M d, y') }}
 														</div>
@@ -41,13 +41,13 @@
 												<li>
 													<div class="post-image">
 														<div class="img-thumbnail img-thumbnail-no-borders d-block">
-															<a href="{{ route('spa.service.service', str_slug($ranservice->title)) }}">
+															<a href="{{ route('spa.service.service', $ranservice->slug) }}">
 																<img src="/upload/{{ $ranservice->img }}" width="50" height="50" alt="{{ $ranservice->title }}">
 															</a>
 														</div>
 													</div>
 													<div class="post-info">
-														<a href="{{ route('spa.service.service', str_slug($ranservice->title)) }}">{{ $ranservice->title }}</a>
+														<a href="{{ route('spa.service.service', $ranservice->slug) }}">{{ $ranservice->title }}</a>
 														<div class="post-meta">
 															 {{ date_format($ranservice->updated_at, 'M d, y') }}
 														</div>
@@ -81,9 +81,6 @@
         							<hr style="width:50%;">
         						</div>
 								<div class= "shadow p-3 m-2 rounded">
-    								<div class="fb-page" data-href="https://www.facebook.com/danabeautyclinicandacademy/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/danabeautyclinicandacademy/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/danabeautyclinicandacademy/">DaNa Beauty Clinic &amp; Academy</a></blockquote></div>
-        								<div id="fb-root"></div>
-    									<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1797819373651791&autoLogAppEvents=1"></script>
-        							</div>
+    								<div class="fb-page" data-href="https://www.facebook.com/danabeautyclinicandacademy/" data-tabs="timeline" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/danabeautyclinicandacademy/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/danabeautyclinicandacademy/">DaNa Beauty Clinic &amp; Academy</a></blockquote></div>
 								</div>
 							</div>

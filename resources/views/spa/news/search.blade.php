@@ -27,7 +27,7 @@
 
 					<div class="row">
 						@include('templates.spa.blogbar')
-						<div class="col-lg-9 order-1">
+						<div class="col-lg-8 order-1">
 							<div class="blog-posts">
 						@foreach($news as $new)
 						@php
@@ -66,9 +66,6 @@
 										</div>
 									</div>
 								</article>
-								<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-numposts="5"></div>
-								<div id="fb-root"></div>
-								<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v3.2&appId=1797819373651791&autoLogAppEvents=1"></script>
 						@endforeach
 								<ul class="pagination float-right">
 									{{ $news->links() }}

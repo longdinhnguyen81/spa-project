@@ -37,9 +37,15 @@
 	                </div>
 	              </div>
 	              <div class="control-group">
+	                <label class="control-label">Keywords:</label>
+	                <div class="controls">
+	                  <input type="text" name="keyword" id="required" value="{{ $service->keyword }}" style="width: 50%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
 	                <label class="control-label">Mô tả:</label>
 	                <div class="controls">
-	                  <textarea name="description">{{ $service->description }} </textarea>
+	                  <textarea name="description" style="width:50%">{{ $service->description }} </textarea>
 	                </div>
 	              </div>
 	              <div class="control-group">
@@ -55,7 +61,7 @@
 		                <select name="cat_id">
 		                  <option value="0">Không</option>
 		            	@foreach($cats as $cat)
-		            	  @if($cat->id == $service->catpackage_id)	
+		            	  @if($cat->id == $service->cat_package_id)	
 		                  	<option selected="selected" value="{{$cat->id}}">{{$cat->name}}</option>
 		                  @else
 		                  	<option value="{{$cat->id}}">{{$cat->name}}</option>

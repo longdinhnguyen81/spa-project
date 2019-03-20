@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 	<head>
 
 		<!-- Basic -->
@@ -7,13 +7,40 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
 		@yield('meta')
-
+        <meta name="google-site-verification" content="8qd7SCGVJ_pQVZ1tc2A0PRcHNq5Vrh4RVOtLJa6Ltv0" />
+        <link rel=”alternate” href="https://thammyviendana.com" hreflang="vn-vi" />
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="/templates/spa/img/favicon.ico" type="image/x-icon" />
 		<link rel="apple-touch-icon" href="/templates/spa/img/apple-touch-icon.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
+		
+		<!-- Structure data -->
+		<script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Việt Nam",
+                "addressRegion": "TP Đà Nẵng",
+                "streetAddress": "455 Trần Hưng Đạo, TP Đà Nẵng"
+            },
+            "description": "thẩm mỹ viện tại đà nẵng, spa tại đà nẵng, thẩm mỹ viện spa uy tín tại đà nẵng",
+            "name": "Thẩm Mỹ Viện Dana",
+            "telephone": "0934 734 555"
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Thẩm mỹ viện Dana Beauty SPA",
+            "url": "https://thammyviendana.com",
+            "sameAs": ["https://www.facebook.com/danabeautyclinicandacademy/"]
+        }
+        </script>
 
 		
 		<!-- Vendor CSS -->
@@ -21,6 +48,7 @@
 		<link rel="stylesheet" href="/templates/spa/vendor/fontawesome-free/css/all.min.css">
 		<link rel="stylesheet" href="/templates/spa/vendor/animate/animate.min.css">
 		<link rel="stylesheet" href="/templates/spa/vendor/owl.carousel/assets/owl.carousel.min.css">
+		<link rel="stylesheet" href="/templates/spa/vendor/magnific-popup/magnific-popup.min.css">
 
 
 		<!-- Theme CSS -->
@@ -67,7 +95,25 @@
 				    font-size: 15px;
 				}
 			}
+			.img-responsive {
+			    width: 100%;
+			    height: auto;
+			    object-fit: cover;
+			}
+			@media (max-width: 576px){
+				.masonry .masonry-item:not(.no-default-style) {
+				    width: 50%;
+				}
+			}
 		</style>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-126454952-4"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-126454952-4');
+        </script>
 
 	</head>
 	<body data-spy="scroll" data-target="#navSecondary" data-offset="170">
@@ -137,7 +183,7 @@
 																Giới Thiệu
 															</a>
 															<ul class="dropdown-menu">
-																<li><a class="dropdown-item" href="#">Câu chuyện của dana</a></li>
+																<li><a class="dropdown-item" href="{{ route('spa.index.aboutus') }}">Câu chuyện của dana</a></li>
 																<li><a class="dropdown-item" href="{{ route('spa.index.picture') }}">Hình ảnh và video</a></li>
 															</ul>
 														</li>

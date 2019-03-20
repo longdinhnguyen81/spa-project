@@ -7,6 +7,7 @@
 
 <!--end-Footer-part-->
 
+@yield('js')
 <script src="/templates/admin/js/excanvas.min.js"></script> 
 <script src="/templates/admin/js/jquery.min.js"></script> 
 <script src="/templates/admin/js/jquery.ui.custom.js"></script> 
@@ -28,7 +29,6 @@
 <script src="/templates/admin/js/jquery.dataTables.min.js"></script> 
 <script src="/templates/admin/js/matrix.tables.js"></script> 
 <script src="/templates/admin/ckeditor/ckeditor.js"></script> 
-
 <script>
      CKEDITOR.replace( 'editor1',
 {

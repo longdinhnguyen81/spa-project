@@ -37,9 +37,15 @@
 	                </div>
 	              </div>
 	              <div class="control-group">
+	                <label class="control-label">Keywords:</label>
+	                <div class="controls">
+	                  <input type="text" name="keyword" id="required" value="{{ old('keyword') }}" style="width: 50%" />
+	                </div>
+	              </div>
+	              <div class="control-group">
 	                <label class="control-label">Mô tả:</label>
 	                <div class="controls">
-	                  <textarea name="description" rows="5">{{ old('description') }} </textarea>
+	                  <textarea name="description" style="width:50%">{{ old('description') }} </textarea>
 	                </div>
 	              </div>
 	              <div class="control-group">

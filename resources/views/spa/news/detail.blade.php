@@ -29,7 +29,7 @@
 
 					<div class="row">
 						@include('templates.spa.blogbar')
-						<div class="col-lg-9 order-1">
+						<div class="col-lg-8 order-1">
 							<div class="blog-posts single-post">
 							
 								<article class="post post-large blog-single-post border-0 m-0 p-0">
@@ -46,26 +46,16 @@
 							
 									<div class="post-content ml-0">
 							
-										<h2 class="font-weight-bold"><a href="blog-post.html">{{ $news->title }}</a></h2>
+										<h2 class="font-weight-bold"><a href="#">{{ $news->title }}</a></h2>
 							
 										<div class="post-meta">
-											<span><i class="far fa-folder"></i> <a href="#">{{ $news->cat->name }}</a></span>
+											<span><i class="far fa-folder"></i> <a href="{{ route('spa.news.news', str_slug($news->cat->name))}}">{{ $news->cat->name }}</a></span>
 										</div>
 											<span><div class="fb-like" data-href="https://spa.vinasofts.vn" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div></span>
 
 										<p>{{ $news->description }}</p>
 										<p>{!! $news->detail !!} </p>
-							
-										<div class="post-block mt-4 pt-2 post-author">
-											<h4 class="mb-3">Author</h4>
-											<div class="img-thumbnail img-thumbnail-no-borders d-block pb-3">
-												<a href="blog-post.html">
-													<img src="img/avatars/avatar.jpg" alt="">
-												</a>
-											</div>
-											<p><strong class="name"><a href="#" class="text-4 pb-2 pt-2 d-block">John Doe</a></strong></p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim ornare nisi, vitae mattis nulla ante id dui. </p>
-										</div>														
+																	
 									</div>
 								</article>
 								<div class="fb-comments" data-href="{{ route('spa.news.detail', ['slug' => str_slug($news->title), 'id' => $news->id]) }}" data-numposts="5"></div>

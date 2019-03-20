@@ -55,6 +55,7 @@
 		<script src="/templates/spa/vendor/jquery.lazyload/jquery.lazyload.min.js"></script>
 		<script src="/templates/spa/vendor/isotope/jquery.isotope.min.js"></script>
 		<script src="/templates/spa/vendor/owl.carousel/owl.carousel.min.js"></script>
+		<script src="/templates/spa/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 		<script src="/templates/spa/vendor/vide/jquery.vide.min.js"></script>
 		<script src="/templates/spa/vendor/vivus/vivus.min.js"></script>
 		
@@ -67,18 +68,36 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="/templates/spa/js/theme.init.js"></script>
-
-		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-			ga('create', 'UA-12345678-1', 'auto');
-			ga('send', 'pageview');
-		</script>
-		 -->
+		<!-- Load Facebook SDK for JavaScript -->
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId            : '674795082923873',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v3.2'
+            });
+          };
+        
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+        
+        <!-- Your customer chat code -->
+        <div class="fb-customerchat"
+          attribution=setup_tool
+          page_id="326535121157760"
+          theme_color="#1c6960"
+          logged_in_greeting="Chào anh chị, em là Thủy tư vấn viên của Dana Spa, em có thể giúp gì được ạ?"
+          logged_out_greeting="Chào anh chị, em là Thủy tư vấn viên của Dana Spa, em có thể giúp gì được ạ?">
+        </div>
 
 	</body>
 </html>

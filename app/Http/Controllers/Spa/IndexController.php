@@ -5,13 +5,57 @@ namespace App\Http\Controllers\Spa;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Contact;
+use App\Counter;
+use CarBon\CarBon;
+use Cache;
 
 class IndexController extends Controller
 {
     public function index(){
+        $now = Carbon::now();
+        $day = $now->day;
+        $month = $now->month;
+        $count = Counter::where('day', $day)->where('month', $month)->first();
+        if(!$count){
+            $counter = new Counter();
+            $counter->day = $day;
+            $counter->month = $month;
+            $counter->author = 1;
+            $counter->page = 1;
+            $counter->save();
+            $key = 'index'.$counter->id;
+            Cache::put($key, 1, 30);
+        }else{
+            $key = 'index'.$count->id;
+            if(!Cache::get($key)){
+                $count->increment('author');
+                $count->increment('page');
+                Cache::put($key, 1, 30);
+            }
+        }
     	return view('spa.index.index');
     }
     public function getContact(){
+        $now = Carbon::now();
+        $day = $now->day;
+        $month = $now->month;
+        $count = Counter::where('day', $day)->where('month', $month)->first();
+        if(!$count){
+            $counter = new Counter();
+            $counter->day = $day;
+            $counter->month = $month;
+            $counter->author = 1;
+            $counter->page = 1;
+            $counter->save();
+            $key = 'contact'.$counter->id;
+            Cache::put($key, 1, 30);
+        }else{
+            $key = 'contact'.$count->id;
+            if(!Cache::get($key)){
+                $count->increment('page');
+                Cache::put($key, 1, 30);
+            }
+        }
     	return view('spa.index.contact');
     }
     public function postContact(Request $request){
@@ -33,9 +77,49 @@ class IndexController extends Controller
         return redirect(route('spa.index.contact'))->with('msg', 'Gửi liên hệ thành công!');
     }
     public function aboutus(){
+        $now = Carbon::now();
+        $day = $now->day;
+        $month = $now->month;
+        $count = Counter::where('day', $day)->where('month', $month)->first();
+        if(!$count){
+            $counter = new Counter();
+            $counter->day = $day;
+            $counter->month = $month;
+            $counter->author = 1;
+            $counter->page = 1;
+            $counter->save();
+            $key = 'about'.$counter->id;
+            Cache::put($key, 1, 30);
+        }else{
+            $key = 'about'.$count->id;
+            if(!Cache::get($key)){
+                $count->increment('page');
+                Cache::put($key, 1, 30);
+            }
+        }
         return view('spa.index.aboutus');
     }
     public function picture(){
+        $now = Carbon::now();
+        $day = $now->day;
+        $month = $now->month;
+        $count = Counter::where('day', $day)->where('month', $month)->first();
+        if(!$count){
+            $counter = new Counter();
+            $counter->day = $day;
+            $counter->month = $month;
+            $counter->author = 1;
+            $counter->page = 1;
+            $counter->save();
+            $key = 'picture'.$counter->id;
+            Cache::put($key, 1, 30);
+        }else{
+            $key = 'picture'.$count->id;
+            if(!Cache::get($key)){
+                $count->increment('page');
+                Cache::put($key, 1, 30);
+            }
+        }
         return view('spa.index.picture');
     }
 }

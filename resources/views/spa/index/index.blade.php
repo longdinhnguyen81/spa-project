@@ -6,7 +6,7 @@
 						<ul>
 							<li class="slide-overlay slide-overlay-dark slide-overlay-level-6" data-transition="fade">
 								<img src="/templates/spa/img/bg-1.jpg"  
-									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
+									alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 
@@ -17,7 +17,7 @@
 									data-y="center" data-voffset="['-50','-50','-50','-75']"
 									data-start="1000"
 									data-transform_in="x:[-300%];opacity:0;s:500;"
-									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<div class="tp-caption text-color-light font-weight-normal"
 									data-x="center"
@@ -30,14 +30,14 @@
 								<div class="tp-caption d-none d-md-block"
 									data-frames='[{"delay":2200,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 									data-x="center" data-hoffset="['80','80','80','135']"
-									data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="/templates/spa/img/slides/slide-white-line.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="/templates/spa/img/slides/slide-white-line.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<div class="tp-caption"
 									data-x="center" data-hoffset="['150','150','150','240']"
 									data-y="center" data-voffset="['-50','-50','-50','-75']"
 									data-start="1000"
 									data-transform_in="x:[300%];opacity:0;s:500;"
-									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
 									data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
@@ -51,12 +51,12 @@
 									data-x="center"
 									data-y="center" data-voffset="['40','40','40','80']"
 									data-fontsize="['18','18','18','50']"
-									data-lineheight="['20','20','20','55']">Hãy đến với chúng tôi DANA SPA</div>
+									data-lineheight="['20','20','20','55']">Hãy đến với chúng tôi Dana Beauty</div>
 								
 							</li>
 							<li class="slide-overlay slide-overlay-dark slide-overlay-level-6" data-transition="fade">
 								<img src="/templates/spa/img/bg-2.jpg"  
-									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
+									alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 
@@ -67,7 +67,7 @@
 									data-y="center" data-voffset="['-80','-80','-80','-130']"
 									data-start="1000"
 									data-transform_in="x:[-300%];opacity:0;s:500;"
-									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<div class="tp-caption text-color-light font-weight-normal"
 									data-x="center"
@@ -96,7 +96,7 @@
 									data-x="center" data-hoffset="['180','190','190','290']"
 									data-y="center"
 									data-fontsize="['145','145','145','250']"
-									data-lineheight="['150','150','150','260']">SPA</div>
+									data-lineheight="['150','150','150','260']">BEAUTY</div>
 
 								<div class="tp-caption font-weight-light text-color-light"
 									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2300,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
@@ -107,7 +107,7 @@
 							</li>
 							<li class="slide-overlay slide-overlay-dark slide-overlay-level-6" data-transition="fade">
 								<img src="/templates/spa/img/bg-3.jpg"  
-									alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
+									alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"
 									data-bgposition="center center" 
 									data-bgfit="cover" 
 									data-bgrepeat="no-repeat" 
@@ -118,7 +118,7 @@
 									data-y="center" data-voffset="['-50','-50','-50','-75']"
 									data-start="1000"
 									data-transform_in="x:[-300%];opacity:0;s:500;"
-									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<div class="tp-caption text-color-light font-weight-normal"
 									data-x="center"
@@ -131,21 +131,21 @@
 								<div class="tp-caption d-none d-md-block"
 									data-frames='[{"delay":2200,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 									data-x="center" data-hoffset="['80','80','80','135']"
-									data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="/templates/spa/img/slides/slide-white-line.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="/templates/spa/img/slides/slide-white-line.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<div class="tp-caption"
 									data-x="center" data-hoffset="['150','150','150','240']"
 									data-y="center" data-voffset="['-50','-50','-50','-75']"
 									data-start="1000"
 									data-transform_in="x:[300%];opacity:0;s:500;"
-									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
+									data-transform_idle="opacity:0.2;s:500;"><img src="/templates/spa/img/slides/slide-title-border.png" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"></div>
 
 								<h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
 									data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
 									data-x="center"
 									data-y="center"
 									data-fontsize="['50','50','50','90']"
-									data-lineheight="['55','55','55','95']">DANA SPA</h1>
+									data-lineheight="['55','55','55','95']">DANA BEAUTY</h1>
 
 								<div class="tp-caption text-light font-weight-light"
 									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
@@ -177,8 +177,8 @@
 				<div class="container mb-5">
 					<div class="row justify-content-center">
 						<div class="col-xl-8 text-center mb-4">
-							<h2 class="font-weight-bold text-8 mb-3 appear-animation" data-appear-animation="fadeIn">Các điều trị nổi bật</h2>
-							<p class="line-height-9 text-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"><span class="opacity-7">Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</span></p>
+							<p class="font-weight-bold text-8 mb-3 appear-animation text-color-primary" data-appear-animation="fadeIn">Các điều trị nổi bật</p>
+							<p class="line-height-9 text-4 appear-animation text-color-primary" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200"><span class="opacity-9">Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</span></p>
 						</div>
 					</div>
 					<div class="row">
@@ -217,8 +217,8 @@
     											<i class="fas fa-hospital icons text-color-primary"></i>
     										</div>
     										<div class="feature-box-info">
-    											<h4 class="mb-2 text-center">Thiết bị hiện đại</h4>
-    											<p class="mb-4">Dana được chuyển giao các loại máy công nghệ cao, tiên tiến nhất trong lĩnh vực thẩm mỹ của thế giới, được chứng nhận ISO 9000, chứng nhận FDA Hoa Kì, CE chứng nhận đạt tiêu chuẩn Châu Âu.</p>
+    											<p class="mb-2 text-center font-weight-bold text-6 text-color-dark">Thiết bị hiện đại</p>
+    											<p class="mb-4 text-4">Dana được chuyển giao các loại máy công nghệ cao, tiên tiến nhất trong lĩnh vực thẩm mỹ của thế giới, được chứng nhận ISO 9000, chứng nhận FDA Hoa Kì, CE chứng nhận đạt tiêu chuẩn Châu Âu.</p>
     										</div>
     									</div>
     								</div>
@@ -228,8 +228,8 @@
     											<i class="fas fa-spa icons text-color-primary"></i>
     										</div>
     										<div class="feature-box-info">
-    											<h4 class="mb-2 text-center">Mỹ phẩm cao cấp</h4>
-    											<p class="mb-4">Tất cả các dòng Sản phẩm sử dụng tại Dana Beauty đều có thành phần chiết xuất từ thảo dược thiên nhiên, của các hãng Mỹ phẩm lớn như Maystar của Tây Ban Nha, Bạch Linh,….</p>
+    											<p class="mb-2 text-center font-weight-bold text-6 text-color-dark">Mỹ phẩm cao cấp</p>
+    											<p class="mb-4 text-4">Tất cả các dòng Sản phẩm sử dụng tại Dana Beauty đều có thành phần chiết xuất từ thảo dược thiên nhiên, của các hãng Mỹ phẩm lớn như Maystar của Tây Ban Nha, Bạch Linh,….</p>
     										</div>
     									</div>
     								</div>
@@ -241,8 +241,8 @@
     											<i class="fas fa-user-md icons text-color-primary"></i>
     										</div>
     										<div class="feature-box-info">
-    											<h4 class="mb-2 text-center">Bác sĩ nước ngoài</h4>
-    											<p class="mb-4">Dana Spa chuyên có 1 đội ngũ bác sĩ nước ngoài thường xuyên về Việt Nam để bàn giao những công nghệ mới nhất trên thế giới. Vì vậy Dana Spa luôn cập nhật những sản phẩm tiên tiến nhất để phục vụ khách hàng.</p>
+    											<p class="mb-2 text-center font-weight-bold text-6 text-color-dark">Bác sĩ nước ngoài</p>
+    											<p class="mb-4 text-4">Dana Beauty chuyên có 1 đội ngũ bác sĩ nước ngoài thường xuyên về Việt Nam để bàn giao những công nghệ mới nhất trên thế giới. Vì vậy Dana Beauty luôn cập nhật những sản phẩm tiên tiến nhất để phục vụ khách hàng.</p>
     										</div>
     									</div>
     								</div>
@@ -252,8 +252,8 @@
     											<i class="fas fa-headphones icons text-color-primary"></i>
     										</div>
     										<div class="feature-box-info">
-    											<h4 class="mb-2 text-center">Tư vấn chuyên nghiệp</h4>
-    											<p class="mb-4">Một đội ngũ nhân viên luôn được cập nhật học hỏi những kiến thức mới, những ứng dụng công nghệ tiến tiến của nghành thẩm mỹ thế giới từ các chuyên gia thẩm mỹ trong và ngoài nước</p>
+    											<p class="mb-2 text-center font-weight-bold text-6 text-color-dark">Tư vấn chuyên nghiệp</p>
+    											<p class="mb-4 text-4">Một đội ngũ nhân viên luôn được cập nhật học hỏi những kiến thức mới, những ứng dụng công nghệ tiến tiến của nghành thẩm mỹ thế giới từ các chuyên gia thẩm mỹ trong và ngoài nước</p>
     										</div>
     									</div>
     								</div>
@@ -270,7 +270,7 @@
 							<div class="col-lg-5 order-2 order-lg-1 pt-4 pt-lg-0 pb-5 pb-lg-0 mt-5 mt-lg-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
 								<p class="font-weight-bold text-color-light text-7 mb-2 text-center">Thẩm mỹ viện Dana</p>
 								<p class="lead font-weight-light text-color-light text-4">Chúng tôi tự tin là đối tác tin cậy của các bạn trong các lĩnh vực làm đẹp.</p>
-								<p class="lead font-weight-light text-color-light text-4">Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ”.</p>
+								<p class="lead font-weight-light text-color-light text-4">Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana Beauty mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ”.</p>
 								
 							</div>
 							<div class="col-9 offset-lg-1 col-lg-5 order-1 order-lg-2 scale-2">
@@ -290,8 +290,8 @@
 						    </div>
 						</div>
 						<div class="col-lg-6 order-1 order-md-2 text-center text-lg-left mb-5 mb-md-0 appear-animation my-auto" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
-							<h2 class="text-color-dark font-weight-normal text-6 mb-2">Hãy đặt hẹn ngay cho các <strong class="font-weight-extra-bold">Bác Sĩ</strong> và các <strong class="font-weight-extra-bold">chuyên gia</strong> để được tư vấn</h2>
-							<p class="lead">Đội ngũ bác sĩ đến từ nước ngoài có nhiều năm kinh nghiệm trong nghề. Đội ngũ tư vấn viên nhiệt tình với sự tư vấn ở nhiều phương tiện khác nhau: Điện thoại, messenger... Chúng tôi hỗ trợ quý khách 24/7 rất hân hạnh được phục vụ các bạn</p>
+							<p class="text-color-primary font-weight-normal text-6 mb-2">Hãy đặt hẹn ngay cho các <strong class="font-weight-extra-bold">Bác Sĩ</strong> và các <strong class="font-weight-extra-bold">chuyên gia</strong> để được tư vấn</p>
+							<p class="lead text-color-primary">Đội ngũ bác sĩ đến từ nước ngoài có nhiều năm kinh nghiệm trong nghề. Đội ngũ tư vấn viên nhiệt tình với sự tư vấn ở nhiều phương tiện khác nhau: Điện thoại, messenger... Chúng tôi hỗ trợ quý khách 24/7 rất hân hạnh được phục vụ các bạn</p>
 							<center><a href="/lien-he" class="btn btn-rounded btn-primary box-shadow-2 mb-2 font-weight-semibold btn-px-4 btn-py-2 text-2">Đặt hẹn</a></center>
 						</div>
 					</div>
@@ -339,7 +339,7 @@
 				</div>
 				<!-- End our doctor -->
 				<!-- bg-color-primary-->
-				<section class="section section-height-3 section-text-light  border-0 m-0 appear-animation" data-appear-animation="fadeIn" style="background-color:#fd8922;padding-top:20px;padding-bottom:20px;">
+				<section class="section section-height-3 section-text-light  border-0 m-0 appear-animation  bg-color-primary" data-appear-animation="fadeIn" style="padding-top:20px;padding-bottom:20px;">
 					<div class="container">
 						<div class="row">
 
@@ -347,12 +347,12 @@
 								<div class="owl-carousel owl-theme show-nav-hover" data-plugin-options="{'items': 1, 'margin': 10, 'loop': true, 'nav': false, 'dots': false, 'autoplay': true, 'autoplayTimeout': 4000}">
 									<div class="row">
 										<div class="col-10 col-sm-8 col-md-4 order-md-2 my-auto mx-auto">
-											<img src="/templates/spa/img/khach-hang.png" class="img-fluid" alt=Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"">
+											<img src="/templates/spa/img/khach-hang.png" class="img-fluid" alt=Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng"">
 										</div>
 										<div class="col-md-7 order-md-1 my-auto mx-auto">
 											<div class="testimonial testimonial-style-2 testimonial-with-quotes mb-0">
 												<blockquote>
-													<p class="text-5 line-height-5 mb-0" style="padding-top:30px;">Các dịch vụ ở Dana Spa đều chất lượng, họ sử dụng công nghệ hiện đại trong việc làm đẹp, vì thế tôi luôn tin tưởng và sử dụng dịch vụ ở đây.</p>
+													<p class="text-5 line-height-5 mb-0" style="padding-top:30px;">Các dịch vụ ở Dana Beauty đều chất lượng, họ sử dụng công nghệ hiện đại trong việc làm đẹp, vì thế tôi luôn tin tưởng và sử dụng dịch vụ ở đây.</p>
 												</blockquote>
 												<div class="testimonial-author">
 													<p><strong class="font-weight-bold text-2 opacity-10">- Chị Hoàng Hoa</strong></p>
@@ -362,12 +362,12 @@
 									</div>
 									<div class="row">
 										<div class="col-10 col-sm-8 col-md-4 order-md-2 my-auto mx-auto">
-											<img src="/templates/spa/img/tham-my/avatar/khach-hang-3.png" class="img-fluid" alt="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng">
+											<img src="/templates/spa/img/tham-my/avatar/khach-hang-3.png" class="img-fluid" alt="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng">
 										</div>
 										<div class="col-md-7 order-md-1 my-auto mx-auto">
 											<div class="testimonial testimonial-style-2 testimonial-with-quotes mb-0 align-self-center">
 												<blockquote>
-													<p class="text-5 line-height-5 mb-0" style="padding-top: 30px;">Ngay từ lần đầu tiên sử dụng dịch vụ, tôi đã cảm thấy được sự chuyên nghiệp của đội ngũ nhân viên Dana Spa. Cảm ơn Dana Spa, nhờ sử dụng dịch vụ mà tôi có thể tự tin hơn trong cuộc sống, công việc.</p>
+													<p class="text-5 line-height-5 mb-0" style="padding-top: 30px;">Ngay từ lần đầu tiên sử dụng dịch vụ, tôi đã cảm thấy được sự chuyên nghiệp của đội ngũ nhân viên Dana Beauty. Cảm ơn Dana Beauty, nhờ sử dụng dịch vụ mà tôi có thể tự tin hơn trong cuộc sống, công việc.</p>
 												</blockquote>
 												<div class="testimonial-author">
 													<p><strong class="font-weight-bold text-2 opacity-10">- Chị Kim Ánh</strong></p>
@@ -400,7 +400,7 @@
 									<div>
 										<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-centered-info">
 											<span class="thumb-info-wrapper">
-												<img src="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" class="img-fluid" alt="Giảm béo lipo tại Dana Spa">
+												<img src="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" class="img-fluid" alt="Giảm béo lipo tại Dana Beauty">
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">Chăm sóc cơ thể<em>dịch vụ giảm béo lipo</em></span>
 												</span>
@@ -430,7 +430,7 @@
 									<div>
 										<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-centered-info">
 											<span class="thumb-info-wrapper">
-												<img src="/templates/spa/img/tham-my/dich-vu/tam-trang-hoang-gia-1.png" class="img-fluid" alt="Tắm trắng hoàng gia Dana Spa">
+												<img src="/templates/spa/img/tham-my/dich-vu/tam-trang-hoang-gia-1.png" class="img-fluid" alt="Tắm trắng hoàng gia Dana Beauty">
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">Chăm sóc da<em>sử dụng laser carbon</em></span>
 												</span>
@@ -440,7 +440,7 @@
 									<div>
 										<span class="thumb-info thumb-info-no-borders thumb-info-no-borders-rounded thumb-info-centered-info">
 											<span class="thumb-info-wrapper">
-												<img src="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" class="img-fluid" alt="Phun môi thẩm mỹ tại Dana Spa">
+												<img src="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" class="img-fluid" alt="Phun môi thẩm mỹ tại Dana Beauty">
 												<span class="thumb-info-title">
 													<span class="thumb-info-inner">Thẩm mỹ ngoại khoa<em>phun môi</em></span>
 												</span>
@@ -455,7 +455,7 @@
 			</div>
 @stop
 @section('meta')
-<title>Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng</title>
+<title>Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng</title>
 		<meta name="keywords" content="spa da nang, tham my vien da nang, da nang spa, cham soc da, giam mo bung" />
 		<meta name="description" content='Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ' />
 		<meta name="news_keywords" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài ">
@@ -465,7 +465,7 @@
 		<meta property="og:image" content= "/templates/spa/img/logo.png" />
 		<meta property="og:url" itemprop="url" content="{{ route('spa.index.index') }}">
 
-		<meta itemprop="name" content="Dana Spa - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
+		<meta itemprop="name" content="Dana Beauty - Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng" />
 		<meta itemprop="description" content="Thẩm mỹ viện, SPA và chăm sóc da Uy tín nhất tại Đà Nẵng, sử dụng công nghệ nước ngoài và được phục vụ bởi các bác sĩ nước ngoài" />
 		<meta itemprop="image" content= "/templates/spa/img/logo.png" />
 @stop

@@ -1,14 +1,29 @@
 @extends('templates.spa.master')
 @section('content')
 <div role="main" class="main">
-				<section class="page-header page-header-modern bg-color-light-scale-1 page-header-md" style="background-image:url(/templates/spa/img/bg-1.jpg); background-size: cover; background-position: center; min-height: 300px;">
-				</section>
+			<section class="page-header page-header-modern bg-color-light-scale-1 page-header-md my-0" style="background-image:url(/templates/spa/img/bg-1.jpg); background-size: cover; background-position: center; min-height: 300px;">
+			</section>
+				
+			<!-- Start Intro-->
+			<div class="home-intro home-intro-primary" id="home-intro" style="margin-bottom:20px;">
+				<div class="container">
+					<div class="row text-center">
+						<div class="col">
+							<p class="mb-0">
+								Thẩm mỹ viện, SPA và chăm sóc da <strong>Uy tín nhất</strong> tại đà nẵng
+								<span>100% khách hàng hài lòng với dịch vụ của chúng tôi</span>
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
 
 			<div class="container">
 
 				<div class="row mt-5">
 					<div class="col-lg-8">
-						<h2 class="font-weight-semibold mb-3">Welcome to DanaSpa</h2>
+						<h2 class="font-weight-semibold mb-3 text-center text-color-primary">Welcome to DanaSpa</h2>
 
 						<p class="lead font-weight-normal">Đã là phụ nữ thì ai cũng có quyền đẹp và được làm đẹp. Phụ nữ sinh ra vốn đã mang trong mình vẻ đẹp và dấu ấn riêng mà không ai khác có thể có được. Hiểu được ý nghĩa thiêng liêng của việc làm đẹp đối với chị em phụ nữ, Dana mang trong mình sứ mệnh “khơi dậy vẻ đẹp vốn có của người phụ nữ, và biến nó trở nên tỏa sáng hơn bao giờ hết”.</p>
 
@@ -24,7 +39,7 @@
 						</div>
 
 						<p class="lead font-weight-normal">Và với vẻ đẹp mà Dana đã giúp chị em phụ nữ khai phá, chúng tôi mong muốn rằng từ vẻ đẹp ấy chị em có thể tự tin và làm chủ cuộc sống của mình, không chỉ là trong gia đình mà còn các mối quan hệ khác trong xã hội.</p>
-						<p class="lead font-weight-normal">“ĐẸP LÀ MỘT LỢI THẾ KHÓ AI SÁNH BẰNG CỦA CHỊ EM.”</p>
+						<p class="lead font-weight-normal text-center text-color-primary"><strong>“ĐẸP LÀ MỘT LỢI THẾ KHÓ AI SÁNH BẰNG CỦA CHỊ EM.”</strong></p>
 						<p class="lead font-weight-normal">Sứ mệnh này không đơn giản chỉ là một ý tưởng nung nấu từ đội ngũ lãnh đạo Dana mà nó đã được hiện thực hóa bởi đội ngũ bác sĩ, kỹ thuật viên tay nghề cao được đào tạo chuyên nghiệp theo tiêu chuẩn Hàn Quốc.</p>
 						<p class="lead font-weight-normal">Đặc biệt, Dana tự hào là một trong những thẩm mỹ viện đầu tiên tại Đà Nẵng sở hữu các công nghệ hàng đầu hiện nay được chuyển giao trực tiếp từ Châu Âu giúp cho việc làm đẹp của chị em trở nên hiệu quả và an toàn hơn bao giờ hết!</p>
 
@@ -82,161 +97,92 @@
         											</span>
         										</a>
         									</div>
-        
-        
         									<div class="masonry-item">
         										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
         											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-2.jpg" class="img-fluid border-radius-0" alt="">
+        												<img src="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg" class="img-fluid border-radius-0" alt="">
         												<span class="thumb-info-action">
-        													<a href="img/projects/project-2.jpg" class="lightbox-portfolio">
+        													<a href="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg" class="lightbox-portfolio">
         														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
         													</a>
         												</span>
         											</span>
         										</a>
         									</div>
-        
         									<div class="masonry-item">
         										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
         											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-29.jpg" class="img-fluid border-radius-0" alt="">
+        												<img src="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" class="img-fluid border-radius-0" alt="">
         												<span class="thumb-info-action">
-        													<a href="img/projects/project-27.jpg" class="lightbox-portfolio">
+        													<a href="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" class="lightbox-portfolio">
         														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
         													</a>
         												</span>
         											</span>
         										</a>
         									</div>
-        
-        									<div class="masonry-item">
+                                            <div class="masonry-item">
         										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
         											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-5.jpg" class="img-fluid border-radius-0" alt="">
+        												<img src="/templates/spa/img/tham-my/dich-vu/tam-trang-hoang-gia-1.png" class="img-fluid border-radius-0" alt="">
         												<span class="thumb-info-action">
-        													<a href="img/projects/project-4.jpg" class="lightbox-portfolio">
+        													<a href="/templates/spa/img/tham-my/dich-vu/tam-trang-hoang-gia-1.png" class="lightbox-portfolio">
         														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
         													</a>
         												</span>
         											</span>
         										</a>
         									</div>
-        
         									<div class="masonry-item">
         										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
         											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-6.jpg" class="img-fluid border-radius-0" alt="">
+        												<img src="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" class="img-fluid border-radius-0" alt="">
         												<span class="thumb-info-action">
-        													<a href="img/projects/project-5.jpg" class="lightbox-portfolio">
+        													<a href="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" class="lightbox-portfolio">
         														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
         													</a>
         												</span>
         											</span>
         										</a>
         									</div>
-        
         									<div class="masonry-item">
         										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
         											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-7.jpg" class="img-fluid border-radius-0" alt="">
+        												<img src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="img-fluid border-radius-0" alt="">
         												<span class="thumb-info-action">
-        													<a href="img/projects/project-6.jpg" class="lightbox-portfolio">
+        													<a href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="lightbox-portfolio">
+        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
+        													</a>
+        												</span>
+        											</span>
+        										</a>
+        									</div><div class="masonry-item">
+        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
+        											<span class="thumb-info-wrapper">
+        												<img src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="img-fluid border-radius-0" alt="">
+        												<span class="thumb-info-action">
+        													<a href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="lightbox-portfolio">
         														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
         													</a>
         												</span>
         											</span>
         										</a>
         									</div>
-        
         									<div class="masonry-item">
         										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
         											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-24.jpg" class="img-fluid border-radius-0" alt="">
+        												<img src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="img-fluid border-radius-0" alt="">
         												<span class="thumb-info-action">
-        													<a href="img/projects/project-7.jpg" class="lightbox-portfolio">
+        													<a href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" class="lightbox-portfolio">
         														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
         													</a>
         												</span>
         											</span>
         										</a>
         									</div>
-        
-        									<div class="masonry-item">
-        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
-        											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-25.jpg" class="img-fluid border-radius-0" alt="">
-        												<span class="thumb-info-action">
-        													<a href="img/projects/project-23.jpg" class="lightbox-portfolio">
-        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
-        													</a>
-        												</span>
-        											</span>
-        										</a>
-        									</div>
-        
-        									<div class="masonry-item">
-        										<span class="thumb-info thumb-info-centered-icons thumb-info-no-borders">
-        											<span class="thumb-info-wrapper">
-        												<img src="img/projects/project-masonry-26.jpg" class="img-fluid border-radius-0" alt="">
-        												<span class="thumb-info-action">
-        													<a href="img/projects/project-24.jpg" class="lightbox-portfolio">
-        														<span class="thumb-info-action-icon thumb-info-action-icon-light"><i class="fas fa-search-plus"></i></span>
-        													</a>
-        												</span>
-        											</span>
-        										</a>
-        									</div>
-        									
         								</div>
         							</div>
         						</div>
-								
-
-								<div class="lightbox" data-plugin-options="{'delegate': 'a', 'type': 'image', 'gallery': {'enabled': true}, 'mainClass': 'mfp-with-zoom', 'zoom': {'enabled': true, 'duration': 300}}">
-									<div class="owl-carousel owl-theme stage-margin" data-plugin-options="{'items': 4, 'margin': 10, 'loop': false, 'nav': false, 'dots': false, 'stagePadding': 40}">
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg">
-												<img class="img-fluid img-responsive"  src="/templates/spa/img/tham-my/dich-vu/phun-may-tan-bot-2.jpg" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg">
-												<img class="img-fluid img-responsive" src="/templates/spa/img/tham-my/dich-vu/cang-da-mat-1.jpg" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-1.png">
-												<img class="img-fluid img-responsive" src="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-1.png" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-2.png">
-												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/cham-soc-da-thai-doc-to-2.png" alt="Beauty Image Dana Spa"">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png">
-												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/giam-beo-lipo-1.png" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/laser-carbon-1.png">
-												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/laser-carbon-1.png" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/HIFU-1.png">
-												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/HIFU-1.png" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-										<div>
-											<a class="img-thumbnail img-thumbnail-no-borders img-thumbnail-hover-icon" href="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png">
-												<img class="img-fluid" src="/templates/spa/img/tham-my/dich-vu/phun-moi-2.png" alt="Beauty Image Dana Spa">
-											</a>
-										</div>
-									</div>
-								</div>
 							</div>
 
 						</div>

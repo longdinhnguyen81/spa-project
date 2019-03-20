@@ -1466,7 +1466,7 @@ html.sticky-header-enabled.sticky-header-active #header .header-logo-sticky-chan
 		font-weight: 400;
 		padding: 6px 18px 6px 18px;
 		position: relative;
-		text-transform: none;
+		text-transform: uppercase;
 		letter-spacing: -0.5px;
 	}
 

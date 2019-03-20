@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\News;
 use App\Category;
+use Storage;
 
 class NewsController extends Controller
 {
@@ -62,11 +63,17 @@ class NewsController extends Controller
         if($request->file('picture') != null){
             $path1 = $request->file('picture');
             $picture =  $path1->store('/', ['disk' => 'upload']);
+            $app_path = str_replace("\\", '/', public_path());
+            $file_path = $app_path.'/upload/'.$news->picture;
+            unlink($file_path);
             $news->picture = $picture;
         }
     	if($request->file('img') != null){
     		$path2 = $request->file('img');
 			$img =  $path2->store('/', ['disk' => 'upload']);
+            $app_path = str_replace("\\", '/', public_path());
+            $img_path = $app_path.'/upload/'.$news->img;
+            unlink($img_path);
             $news->img = $img;
         }
     	$news->title = $request->title;
@@ -79,6 +86,11 @@ class NewsController extends Controller
     }
     public function delete($id){
     	$news = News::find($id);
+        $app_path = str_replace("\\", '/', public_path());
+        $file_path = $app_path.'/upload/'.$news->picture;
+        $img_path = $app_path.'/upload/'.$news->img;
+        unlink($file_path);
+        unlink($img_path);
     	$news->delete();
     	return redirect(route('admin.news.index'))->with('msg', 'Xoá thành công');
     }

@@ -27,7 +27,7 @@
 
 					<div class="row">
 						@include('templates.spa.blogbar')
-						<div class="col-lg-9 order-1">
+						<div class="col-lg-8 order-1">
 							<div class="blog-posts">
 						@foreach($news as $new)
 						@php

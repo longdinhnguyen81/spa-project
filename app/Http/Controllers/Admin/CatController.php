@@ -5,13 +5,13 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Category;
+use App\News;
 
 class CatController extends Controller
 {
     public function index(){
-    	$cats = Category::where('parent_id', 0)->get();
-    	$parent_cats = Category::where('parent_id','!=',0)->get();
-    	return view('admin.category.index', compact('cats','parent_cats'));
+    	$cats = Category::all();
+    	return view('admin.category.index', compact('cats'));
     }
     public function getAdd(){
     	$cats = Category::all();
@@ -23,11 +23,9 @@ class CatController extends Controller
     	]);
     	$name = $request->name;
     	$slug_name = str_slug($name);
-    	$parent_id = $request->parent_id;
     	$category = new Category([
     		'name' => $name,
     		'slug_name' => $slug_name,
-    		'parent_id' => $parent_id
     	]);
     	$category->save();
     	return redirect(route('admin.category.index'))->with('msg', 'Thêm thành công');
@@ -41,15 +39,18 @@ class CatController extends Controller
     		'name' => 'required|unique:category,name,'.$id,
     	]);
     	$cat = Category::find($id);
-    	$cat->name = $request->name;
+        $cat->name = $request->name;
+    	$cat->slug_name = str_slug($request->name);
     	$cat->update();
     	return redirect(route('admin.category.index'))->with('msg', 'Sửa thành công');
     }
     public function delete($id){
     	$cat = Category::find($id);
-    	$cat_parent = Category::where('parent_id', $id);
-    	$cat->delete();
-    	$cat_parent->delete();
+        $news = News::where('category_id', $id)->get();
+        foreach ($news as $new) {
+            $new->delete();
+        }    	
+        $cat->delete();
     	return redirect(route('admin.category.index'))->with('msg', 'Xoá thành công');
     }
 }
