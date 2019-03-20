@@ -14,7 +14,6 @@ Route::pattern('id','([0-9]*)');
 Route::pattern('cid','([0-9]*)');
 Route::pattern('slug','(.*)');
 
-
 Route::namespace('Ajax')->group(function(){
 	Route::get('/service', [
 		'uses' => 'AjaxController@service',
@@ -95,6 +94,10 @@ Route::namespace('Spa')->group(function(){
 	Route::get('tim-kiem', [
 		'uses' => 'NewsController@search',
 		'as' => 'spa.news.search'
+	]);
+	Route::get('sitemap.xml', [
+		'uses' => 'IndexController@sitemap',
+		'as' => 'spa.index.sitemap'
 	]);
 });
 Route::namespace('Admin')->middleware('auth')->group(function(){

@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Contact;
 use App\Counter;
+use App\Category;
+use App\News;
+use App\Service;
 use CarBon\CarBon;
 use Cache;
 
@@ -121,5 +124,15 @@ class IndexController extends Controller
             }
         }
         return view('spa.index.picture');
+    }
+    public function sitemap(){
+        $cats = Category::all();
+        $news = News::all();
+        $services = Service::all();
+         return response()->view('spa.index.sitemap', [
+          'cats' => $cats,
+          'news' => $news,
+          'services' => $services,
+      ])->header('Content-Type', 'text/xml');
     }
 }
